@@ -10,7 +10,7 @@ This repository will host the **code** and **dataset** for the paper:
 - [arXiv preprint](https://arxiv.org/abs/6819421)  
 
 <p align="center">
-  <img src="assets/teaser.pdf" alt="PersONAL teaser" width="80%">
+  <img src="assets/teaser.png" alt="PersONAL teaser" width="80%">
 </p>
 
 ---
