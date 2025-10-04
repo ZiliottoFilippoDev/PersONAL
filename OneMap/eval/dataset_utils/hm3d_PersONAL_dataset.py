@@ -1,4 +1,4 @@
-from eval.dataset_utils import Episode, SceneData, SemanticObject
+from eval.dataset_utils import PersONAL_Episode, SceneData, SemanticObject
 
 # typing
 from typing import Dict, List
@@ -9,7 +9,7 @@ from os import listdir
 import gzip
 import json
 
-def load_PersONAL_episodes(episodes: List[Episode], scene_data: Dict[str, SceneData], object_nav_path: str):
+def load_PersONAL_episodes(episodes: List[PersONAL_Episode], scene_data: Dict[str, SceneData], object_nav_path: str):
     i = 0
     files = listdir(object_nav_path)
 
@@ -53,7 +53,7 @@ def load_PersONAL_episodes(episodes: List[Episode], scene_data: Dict[str, SceneD
                     ep_scene_id = ep["scene_id"]
                     ep_scene_id = "hm3d/" + "/".join(ep_scene_id.split("/")[1:])      #TODO CHECK IF COMMENT NEEDED: Removes 'hm3d_v0.2' from the scene_id
 
-                    episode = Episode(ep_scene_id,
+                    episode = PersONAL_Episode(ep_scene_id,
                                       i,
                                       ep['start_position'],
                                       ep['start_rotation'],
@@ -105,9 +105,9 @@ def get_task_description(obj_id, scene_episodes):
         
     return None
 
-
+#TODO UPDATE: Dataset path
 if __name__ == '__main__':
-    eps, scene_data = load_hm3d_episodes([], {}, "datasets/objectnav_hm3d_v1/val/content")
+    eps, scene_data = load_PersONAL_episodes([], {}, "habitat-lab/data/datasets/PersONAL/active/val/easy/content/")
     print(f"Found {len(eps)} episodes")
     scene_dist = {}
     for ep in eps:

@@ -27,13 +27,16 @@ This repository will host the **code** and **dataset** for the paper:
 
 - cd PersONAL
 - Cloning habitat-lab : git clone --branch v0.2.5 https://github.com/facebookresearch/habitat-lab
-- Symlink to data 
+- Download HM3D data to habitat-lab/data
+- Symlink to data content
   - Create directory path in habitat-lab : mkdir -p data/datasets/PersONAL/active/
   - Create SymLink : ln -s /mnt/PersONAL/data/split  habitat-lab/data/datasets/PersONAL/active/val
   - (CREATE MEDIUM AND HARD FILT. IS IT NEEDED????)
 - Copy Dataset Info : cp habitat-utils/personalized_object_nav_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/
 - Copy Task Info : cp habitat-utils/personalized_object_nav_task.py habitat-lab/habitat-lab/habitat/tasks/nav/
 - Register Dataset: cp habitat-utils/register_personalized_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/__init__.py
+
+(NEED A TEST TO CONFIRM IF ALL WENT )
 
 #### Testing Baselines : VLFM
 
@@ -52,6 +55,7 @@ Setting up the Env:
   - Added : config/mon -> PersONAL_eval_conf.yaml
   - Added : PersONAL_eval_habitat.py
   - Added : eval/dataset_utils/__init__.py -> import PersONAL dataset
+  - Added : eval/dataset_utils/common.py -> PersONAL_Episode
 
 ---
 

@@ -40,6 +40,17 @@ class Episode:
     floor_id: Union[int, None] = None
 
 @dataclass
+class PersONAL_Episode:
+    scene_id: str
+    episode_id: int
+    start_position: List[float]
+    start_rotation: List[float]
+    obj_sequence: List[str]
+    best_dist: Union[float, List[float]]
+    floor_id: Union[int, None] = None
+    extra: Union[Dict, None] = None     #Added: In case of extra info required
+
+@dataclass
 class GibsonEpisode(Episode):
     object_id: int = 0
     floor_id: int = 0

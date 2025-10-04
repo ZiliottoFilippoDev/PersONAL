@@ -292,6 +292,7 @@ class HabitatEvaluator:
 
         #Skip scenes, episodes already run and saved in results directory
         results_dir = os.path.join(self.results_path, "state")
+        scene_eps_done = []
         if os.path.exists(results_dir):
 
             get_done_eps = lambda f: int( f.split("_")[-1].split(".txt")[0] )
@@ -309,6 +310,7 @@ class HabitatEvaluator:
                 results.append(int(state_result[0]))
 
             print(f"Loaded Saved Results: {results}")
+            
 
 
         for n_ep, episode in enumerate(self.episodes):
