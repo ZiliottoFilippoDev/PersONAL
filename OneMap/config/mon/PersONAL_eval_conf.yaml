@@ -1,0 +1,21 @@
+EvalConf:
+  multi_object: false
+  max_steps: 500
+  max_dist: 1.0
+  is_gibson: False
+
+  #PersONAL
+  object_nav_path: "habitat-lab/data/datasets/objectnav/eai_pers/active/val/easy/content/"        #Mode : Easy
+  # object_nav_path: "habitat-lab/data/datasets/objectnav/eai_pers/active/val/medium/content/"    #Mode : Medium
+  # object_nav_path: "habitat-lab/data/datasets/objectnav/eai_pers/active/val/hard/content/"      #Mode : Hard
+  scene_path: "habitat-lab/data/scene_datasets/"
+
+  log_rerun: False
+  use_pointnav: False
+  square_im: True
+
+config: [
+  ./controller_habitat.yaml, # Default Habitat Controller
+  ./mapping_conf_sim.yaml,       # Default Mapping Configuration
+  ./planning_conf.yaml       # Default Planning Configuration
+]
