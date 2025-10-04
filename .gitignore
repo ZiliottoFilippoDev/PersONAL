@@ -49,3 +49,5 @@ Thumbs.db
 *.tmp
 *.swp
 *.swoOneMap/
+habitat-lab/
+OneMap/habitat-lab

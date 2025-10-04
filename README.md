@@ -21,6 +21,40 @@ This repository will host the **code** and **dataset** for the paper:
 
 ---
 
+## Installation
+
+#### Setting up PersONAL Dataset
+
+- cd PersONAL
+- Cloning habitat-lab : git clone --branch v0.2.5 https://github.com/facebookresearch/habitat-lab
+- Symlink to data 
+  - Create directory path in habitat-lab : mkdir -p data/datasets/PersONAL/active/
+  - Create SymLink : ln -s /mnt/PersONAL/data/split  habitat-lab/data/datasets/PersONAL/active/val
+  - (CREATE MEDIUM AND HARD FILT. IS IT NEEDED????)
+- Copy Dataset Info : cp habitat-utils/personalized_object_nav_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/
+- Copy Task Info : cp habitat-utils/personalized_object_nav_task.py habitat-lab/habitat-lab/habitat/tasks/nav/
+- Register Dataset: cp habitat-utils/register_personalized_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/__init__.py
+
+#### Testing Baselines : VLFM
+
+
+#### Testing Baselines : OneMap
+
+(WRITE INTRO ABOUT ONEMAP. WHY WE CHOSE THIS)
+
+Setting up the Env:
+- Clone PersONAL
+- cd PersONAL
+- Clone the OneMap source repo locally and follow source instruction to set up the environment
+- Symlink to source habitat-lab containing PersONAL dataset
+- Changes
+  - Added : eval/dataset_utils -> hm3d_PersONAL_dataset.py
+  - Added : config/mon -> PersONAL_eval_conf.yaml
+  - Added : PersONAL_eval_habitat.py
+  - Added : eval/dataset_utils/__init__.py -> import PersONAL dataset
+
+---
+
 ## 📑 Citation
 If you find this work useful, please cite:
 
