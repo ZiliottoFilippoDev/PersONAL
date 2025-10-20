@@ -37,7 +37,8 @@ register_hydra_plugin(HabitatConfigPlugin)
 @hydra.main(
     version_base=None,
     config_path="../config",
-    config_name="experiments/vlfm_objectnav_hm3d",
+    # config_name="experiments/vlfm_objectnav_hm3d",
+    config_name="experiments/vlfm_objectnav_persONAL",      #CHANGED: Point to PersONAL config file
 )
 def main(cfg: DictConfig) -> None:
     assert os.path.isdir("data"), "Missing 'data/' directory!"

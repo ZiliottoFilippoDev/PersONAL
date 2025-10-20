@@ -96,7 +96,17 @@ class VLFMTrainer(PPOTrainer):
         if config.habitat_baselines.verbose:
             logger.info(f"env config: {OmegaConf.to_yaml(config)}")
 
+
+        #Change dir to inside habitat-lab (in order to properly initialize env)
+        curr_dir = os.getcwd()
+        hab_dir = os.path.join(curr_dir, 'habitat-lab')
+        print(f"Chaning directory to : {hab_dir}")
+        os.chdir(hab_dir)
+
         self._init_envs(config, is_eval=True)
+
+        print(f"Changing back directory to: {curr_dir}")
+        os.chdir(curr_dir)
 
         self._agent = self._create_agent(None)
         action_shape, discrete_actions = get_action_space_info(self._agent.policy_action_space)

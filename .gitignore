@@ -51,3 +51,16 @@ Thumbs.db
 *.swoOneMap/
 habitat-lab/
 OneMap/habitat-lab
+vlfm/GroundingDINO
+vlfm/MobileSAM
+vlfm/data/mobile_sam.pt
+vlfm/data/groundingdino_swint_ogc.pth
+vlfm/data/yolov7-e6e.pt
+vlfm/habitat-lab
+vlfm/yolov7
+vlfm/frontier_exploration
+vlfm/depth_camera_filtering
+vlfm/data/dummy_policy.pth
+vlfm/traced_model.pt
+vlfm/outputs/
+vlfm/tb/

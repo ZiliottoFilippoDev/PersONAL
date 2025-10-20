@@ -34,11 +34,33 @@ This repository will host the **code** and **dataset** for the paper:
   - (CREATE MEDIUM AND HARD FILT. IS IT NEEDED????)
 - Copy Dataset Info : cp habitat-utils/personalized_object_nav_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/
 - Copy Task Info : cp habitat-utils/personalized_object_nav_task.py habitat-lab/habitat-lab/habitat/tasks/nav/
-- Register Dataset: cp habitat-utils/register_personalized_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/__init__.py
+- Register Dataset: 
+  - cp habitat-utils/register_personalized_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/__init__.py
+  - cp habitat-utils/registration.py habitat-lab/habitat-lab/habitat/datasets/registration.py
 
 (NEED A TEST TO CONFIRM IF ALL WENT )
 
 #### Testing Baselines : VLFM
+
+- Clone the source code and cd vlfm
+- Symlink the habitat-lab dir : ln -s /mnt/PersONAL/habitat-lab habitat-lab
+- Follow instructions as found in source:
+  - Clone the respective repos (as instructed in the source):
+    - GroundingDINO
+    - MobileSAM
+    - yolov7
+    - depth_camera_filtering (https://github.com/naokiyokoyama/depth_camera_filtering/tree/main/depth_camera_filtering)
+    - frontier_exploration (https://github.com/naokiyokoyama/frontier_exploration/tree/main/frontier_exploration)
+
+  - Download following weights to the data dir (cd data):
+    - groundingdino_swint_ogc.pth
+    - mobile_sam.pt
+    - yolov7-e6e.pt
+
+
+  - Changes made:
+    - config file (habitat task type, dataset and scene_dataset)
+    - vlfm run.py (changed config file path)
 
 
 #### Testing Baselines : OneMap

@@ -31,7 +31,7 @@ def _try_register_objectnavdatasetv1():
 
 
 #Register PersONAL Dataset
-def _try_register_objectnavdatasetv1floor():
+def _try_register_objectnavdataset_PersONALv1():
     try:
         from habitat.datasets.object_nav.personalized_object_nav_dataset import (  # noqa: F401
             PersonalizedObjectNavDatasetV1,
