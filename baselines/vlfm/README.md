@@ -35,19 +35,14 @@ Understanding how humans leverage semantic knowledge to navigate unfamiliar envi
 
 Source Repo : [https://github.com/bdaiinstitute/vlfm](https://github.com/bdaiinstitute/vlfm)
 
-
-# Testing Baselines
-
-## Baseline : VLFM
-
-### Setting up the directory
+## Setting up the directory
 
 To test the VLFM baseline on the PersONAL dataset, follow the instructions below. Before running, we need to set up a few paths and directories (as required by the source repo). 
 
 If you need an overview of the changes made to the source code, please 
 refer to the PersONAL_changes.txt file present in the vlfm directory.
 
-#### Create habitat-lab directory
+### Create habitat-lab directory
 
 ```bash
 #Enter the VLFM directory
@@ -57,7 +52,7 @@ cd vlfm
 ln -s \<PATH-TO-PersONAL\>/PersONAL/habitat-lab habitat-lab
 ```
 
-#### Clone required repositories (as instructed in the source)
+### Clone required repositories (as instructed in the source)
 
 ```bash
 
@@ -83,7 +78,7 @@ mv frontier_exploration_parent/frontier_exploration frontier_exploration
 rm -rf frontier_exploration_parent
 ```
 
-#### Download model weights
+### Download model weights
 
 The weights for MobileSAM, GroundingDINO, and Yolov7 must be saved to the `data/` directory. The weights can be downloaded from the following links:
 
@@ -91,7 +86,7 @@ The weights for MobileSAM, GroundingDINO, and Yolov7 must be saved to the `data/
   - `mobile_sam.pt` : [https://github.com/ChaoningZhang/MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
   - `yolov7-e6e.pt` : [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
 
-### Setting up the Conda Env
+## Setting up the Conda Env
 
 ```bash
 #Create Conda env
@@ -124,24 +119,27 @@ import lavis
 import cv2
 ```
 
-Some common bugs encountered are solved below:
+<details>
+<summary>Debugging common installation bugs</summary>
 
 <details>
 <summary>Error: LayerId = cv2.dnn.DictValue</summary>
 
 Reference : https://github.com/facebookresearch/nougat/issues/40  
 Solution : Comment out the line containing `LayerId = cv2.dnn.DictValue` from the source `__init__.py` file.
-</details>
+</details>  
 
 <details>
 <summary>Error Message: GL::Context: cannot retrieve OpenGL version: GL::Renderer::Error::InvalidValue</summary>
 
 Reference : https://github.com/facebookresearch/habitat-sim/pull/2519  
 Solution : `conda remove libva libgl libglx libegl libglvnd`
+</details>  
+
 </details>
 
 
-### Evaluation on PersONAL
+## Evaluation on PersONAL
 
 For evaluation, make sure the current working directory is in `PersONAL/baselines/vlfm/`.
 
