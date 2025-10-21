@@ -92,7 +92,11 @@ cp habitat-utils/registration.py habitat-lab/habitat-lab/habitat/datasets/regist
 cp habitat-utils/RL_Env.py habitat-lab/habitat-lab/habitat/core/env.py
 ```
 
-(NEED A TEST TO CONFIRM IF ALL WENT )
+#### Test Setup
+
+```bash
+python -m test
+```
 
 ## Testing Baselines : VLFM
 
