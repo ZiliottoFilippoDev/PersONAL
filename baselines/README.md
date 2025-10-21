@@ -135,3 +135,12 @@ Setting up the Env:
   - Added : PersONAL_eval_habitat.py
   - Added : eval/dataset_utils/__init__.py -> import PersONAL dataset
   - Added : eval/dataset_utils/common.py -> PersONAL_Episode
+
+
+### Evaluation
+
+```bash
+python3 PersONAL_eval_habitat.py \
+--config config/mon/PersONAL_eval_conf.yaml  \
+--PlanningConf.using_ov
+```

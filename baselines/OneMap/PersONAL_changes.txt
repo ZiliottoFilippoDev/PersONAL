@@ -1,0 +1,6 @@
+Changes
+  - Added : eval/dataset_utils -> hm3d_PersONAL_dataset.py
+  - Added : config/mon -> PersONAL_eval_conf.yaml
+  - Added : PersONAL_eval_habitat.py
+  - Added : eval/dataset_utils/__init__.py -> import PersONAL dataset
+  - Added : eval/dataset_utils/common.py -> PersONAL_Episode
