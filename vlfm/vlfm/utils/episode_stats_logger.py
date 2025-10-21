@@ -21,11 +21,16 @@ def log_episode_stats(episode_id: int, scene_id: str, infos: Dict) -> str:
         infos: The info dict from the environment after update with policy info.
     """
     scene = os.path.basename(scene_id).split(".")[0]
+    failure_cause = "Unkown"
+
     if infos["success"] == 1:
         failure_cause = "did_not_fail"
     else:
-        failure_cause = determine_failure_cause(infos)
-        print(f"Episode {episode_id} in scene {scene} failed due to '{failure_cause}'.")
+        try:
+            failure_cause = determine_failure_cause(infos)
+            print(f"Episode {episode_id} in scene {scene} failed due to '{failure_cause}'.")
+        except:
+            failure_cause = "Unkown"
 
     if "ZSOS_LOG_DIR" in os.environ:
         infos_no_map = infos.copy()

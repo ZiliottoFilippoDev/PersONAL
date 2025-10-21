@@ -13,6 +13,7 @@ from habitat.config.default import get_agent_config
 from habitat.tasks.rearrange.rearrange_sensors import GfxReplayMeasure
 from habitat.tasks.rearrange.utils import write_gfx_replay
 from habitat_baselines import PPOTrainer
+from habitat_baselines.rl.ppo.policy import PolicyActionData
 from habitat_baselines.common.baseline_registry import baseline_registry
 from habitat_baselines.common.obs_transformers import (
     apply_obs_transforms_batch,
@@ -112,6 +113,11 @@ class VLFMTrainer(PPOTrainer):
         if config.habitat_baselines.verbose:
             logger.info(f"env config: {OmegaConf.to_yaml(config)}")
 
+        ###ADDED PERSONAL
+        #Setting log dir
+        os.environ["ZSOS_LOG_DIR"] = os.path.join(os.getcwd(), config.PersONAL_args.log_dir)
+        os.makedirs(os.environ["ZSOS_LOG_DIR"], exist_ok=True)
+        print(f"Setting Logging Directory to be: {os.environ['ZSOS_LOG_DIR']}")
 
         #Change dir to inside habitat-lab (in order to properly initialize env)
         curr_dir = os.getcwd()
@@ -123,6 +129,7 @@ class VLFMTrainer(PPOTrainer):
 
         print(f"Changing back directory to: {curr_dir}")
         os.chdir(curr_dir)
+        ###
 
         self._agent = self._create_agent(None)
         action_shape, discrete_actions = get_action_space_info(self._agent.policy_action_space)
@@ -201,18 +208,36 @@ class VLFMTrainer(PPOTrainer):
 
                 print(f"\n\nCurrent Scene Name: {curr_scene_name}")
                 print(f"Current Episode ID: {curr_episode_id}")
+
+                #If Logged file already exists, then skip the current episode.
+                log_file_name = f"{curr_episode_id}_{curr_scene_name}.json"        
+                log_file_path = os.path.join(os.environ["ZSOS_LOG_DIR"], log_file_name)
+
+                print(f"\nLog File path: ", log_file_path)
+                skip_episode = os.path.exists(log_file_path)
+
+                if skip_episode:
+                    print(f"\n\n----Logged File already exists at: {log_file_path}.\nSkipping Episode {curr_episode_id} for Scene {curr_scene_name}...")
             ###
 
-            curr_hab_pos = get_curr_hab_pos(self.envs)[0]
-
             with inference_mode():
-                action_data = self._agent.actor_critic.act(
-                    batch,
-                    test_recurrent_hidden_states,
-                    prev_actions,
-                    not_done_masks,
-                    deterministic=False,
-                )
+
+                if skip_episode:
+                    stop_action = torch.tensor([[0]], dtype=torch.long)
+                    
+                    action_data = PolicyActionData(
+                                    actions=stop_action,
+                                    rnn_hidden_states=test_recurrent_hidden_states,
+                                )
+                    
+                else:
+                    action_data = self._agent.actor_critic.act(
+                        batch,
+                        test_recurrent_hidden_states,
+                        prev_actions,
+                        not_done_masks,
+                        deterministic=False,
+                    )
                 if "VLFM_RECORD_ACTIONS_DIR" in os.environ:
                     action_id = action_data.actions.cpu()[0].item()
                     filepath = os.path.join(
@@ -305,7 +330,7 @@ class VLFMTrainer(PPOTrainer):
                 elif int(next_episodes_info[i].episode_id) == 123123123:
                     envs_to_pause.append(i)
 
-                if len(self.config.habitat_baselines.eval.video_option) > 0:
+                if (not skip_episode) and len(self.config.habitat_baselines.eval.video_option) > 0:
                     hab_vis.collect_data(batch, infos, action_data.policy_info)
 
                 # episode ended
@@ -331,16 +356,17 @@ class VLFMTrainer(PPOTrainer):
                         log_episode_stats,
                     )
 
-                    try:
+                    if (not skip_episode):
+
+                        infos[i]["num_steps"] = self._agent.actor_critic._num_steps
+
                         failure_cause = log_episode_stats(
                             current_episodes_info[i].episode_id,
                             current_episodes_info[i].scene_id,
                             infos[i],
                         )
-                    except Exception:
-                        failure_cause = "Unknown"
 
-                    if len(self.config.habitat_baselines.eval.video_option) > 0:
+                    if (not skip_episode) and len(self.config.habitat_baselines.eval.video_option) > 0:
                         rgb_frames[i] = hab_vis.flush_frames(failure_cause)
                         generate_video(
                             video_option=self.config.habitat_baselines.eval.video_option,

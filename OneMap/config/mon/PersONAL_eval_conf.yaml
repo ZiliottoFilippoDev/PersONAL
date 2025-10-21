@@ -5,9 +5,9 @@ EvalConf:
   is_gibson: False
 
   #PersONAL
-  object_nav_path: "habitat-lab/data/datasets/PersONAL/active/val/easy/content/"        #Mode : Easy
-  # object_nav_path: "habitat-lab/data/datasets/PersONAL/active/val/medium/content/"    #Mode : Medium
-  # object_nav_path: "habitat-lab/data/datasets/PersONAL/active/val/hard/content/"      #Mode : Hard
+  object_nav_path: "habitat-lab/data/datasets/PersONAL/active/val/easy/content/"                            #Mode : Easy
+  # object_nav_path: "habitat-lab/data/datasets/PersONAL/active/val/test_baselines/medium_filt/content/"    #Mode : Medium
+  # object_nav_path: "habitat-lab/data/datasets/PersONAL/active/val/test_baselines/hard/content/"                          #Mode : Hard
   scene_path: "habitat-lab/data/scene_datasets/"
 
   log_rerun: False

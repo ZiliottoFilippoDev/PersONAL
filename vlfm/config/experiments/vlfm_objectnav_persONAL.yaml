@@ -19,7 +19,7 @@ defaults:
 
 habitat:
   environment:
-    max_episode_steps: 500              #Max number of steps in an episode
+    max_episode_steps: 50              #Max number of steps in an episode
     iterator_options:
       max_scene_repeat_steps: 50000
   task:
@@ -33,8 +33,8 @@ habitat:
   dataset:
     type: "Personalized-ObjectNav-v1"
     scenes_dir: "data/scene_datasets"
-    data_path: "data/datasets/PersONAL/active/val/easy/easy.json.gz"
-    # data_path: "data/datasets/PersONAL/active/val/test_baselines/medium_filt/medium.json.gz"
+    # data_path: "data/datasets/PersONAL/active/val/easy/easy.json.gz"
+    data_path: "data/datasets/PersONAL/active/val/test_baselines/medium_filt/medium.json.gz"
     # data_path: "data/datasets/PersONAL/active/val/test_baselines/hard_filt/hard.json.gz"
     content_scenes: ['5cdEh9F2hJL'] #["*"]
 
