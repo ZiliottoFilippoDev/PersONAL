@@ -43,25 +43,54 @@ This repository will host the **code** and **dataset** for the paper:
 
 #### Testing Baselines : VLFM
 
-- Clone the source code and cd vlfm
-- Symlink the habitat-lab dir : ln -s /mnt/PersONAL/habitat-lab habitat-lab
-- Follow instructions as found in source:
-  - Clone the respective repos (as instructed in the source):
-    - GroundingDINO
-    - MobileSAM
-    - yolov7
-    - depth_camera_filtering (https://github.com/naokiyokoyama/depth_camera_filtering/tree/main/depth_camera_filtering)
-    - frontier_exploration (https://github.com/naokiyokoyama/frontier_exploration/tree/main/frontier_exploration)
+##### Setting up the Env
 
-  - Download following weights to the data dir (cd data):
-    - groundingdino_swint_ogc.pth
-    - mobile_sam.pt
-    - yolov7-e6e.pt
+To test the VLFM baseline on the PersONAL dataset, follow the instructions below. Before running, we need to set up a few paths and directories (as required by the source repo). 
+
+```bash
+#Enter the VLFM directory
+cd vlfm
+
+#Symlink habitat-lab (present in parent dir)
+ln -s /mnt/PersONAL/habitat-lab habitat-lab
+```
+
+We now clone the respective repos (as instructed in the source):
+    - [GroundingDINO](https://github.com/IDEA-Research/GroundingDINO)
+    - [MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
+    - [yolov7](github.com/WongKinYiu/yolov7)
+    - [depth_camera_filtering](https://github.com/naokiyokoyama/depth_camera_filtering/tree/main/depth_camera_filtering)
+    - [frontier_exploration](https://github.com/naokiyokoyama/frontier_exploration/tree/main/frontier_exploration)
+
+Download following weights to the data dir.:
+  - groundingdino_swint_ogc.pth : [https://github.com/IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO)
+  - mobile_sam.pt : [https://github.com/ChaoningZhang/MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
+  - yolov7-e6e.pt : [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
 
 
-  - Changes made:
-    - config file (habitat task type, dataset and scene_dataset)
-    - vlfm run.py (changed config file path)
+For reference, these are an overview of the changes made to the source code:
+  - config.experiments -> vlfm_objectnav_persONAL.yaml (habitat task type, dataset and scene_dataset)
+  - vlfm -> run.py (changed config file path)
+  - vlfm.policy -> habitat_policies (changes denoted by "ADDED PERSONAL")
+  - vlfm.utils -> vlfm_trainer (changes denoted by "ADDED PERSONAL")
+  - read_results.py
+
+
+##### Training
+
+```bash
+#Enter the vlfm directory
+cd vlfm
+
+#Run on PersONAL
+python -m vlfm.run PersONAL_args.log_dir=log/junk
+```
+
+##### Evaluation
+
+```bash
+python -m read_results --log_dir log/junk/ --PersONAL_data_type easy
+```
 
 
 #### Testing Baselines : OneMap
