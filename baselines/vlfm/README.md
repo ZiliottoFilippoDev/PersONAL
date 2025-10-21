@@ -123,14 +123,14 @@ import cv2
 <summary>Debugging common installation bugs</summary>
 
 <details>
-<summary>Error: LayerId = cv2.dnn.DictValue</summary>
+<summary> &nbsp;&nbsp;&nbsp; Error: LayerId = cv2.dnn.DictValue</summary>
 
 Reference : https://github.com/facebookresearch/nougat/issues/40  
 Solution : Comment out the line containing `LayerId = cv2.dnn.DictValue` from the source `__init__.py` file.
-</details>  
+</details>
 
 <details>
-<summary>Error Message: GL::Context: cannot retrieve OpenGL version: GL::Renderer::Error::InvalidValue</summary>
+<summary> &nbsp;&nbsp;&nbsp; Error Message: GL::Context: cannot retrieve OpenGL version: GL::Renderer::Error::InvalidValue</summary>
 
 Reference : https://github.com/facebookresearch/habitat-sim/pull/2519  
 Solution : `conda remove libva libgl libglx libegl libglvnd`
