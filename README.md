@@ -23,27 +23,26 @@ This repository will host the **code** and **dataset** for the paper:
 
 ## Setting up PersONAL Dataset
 
-To set up the dataset in Habitat, please follow the below instructions. 
-
-1) Clone the repository
+To set up PersONAL as a dataset in Habitat, start by cloning the repositories.
 
 ```bash
+#Clone PersONAL
 git clone https://github.com/ZiliottoFilippoDev/PersONAL
-
 cd PersONAL
-```
 
-2) Clone habitat-lab
-
-```bash
+#Clone Habitat-Lab
 git clone --branch v0.2.5 https://github.com/facebookresearch/habitat-lab
 ```
 
-3) Download HM3D data (as per VLFM source repo)
+#### Download HM3D data
 
-First, set the relevant variables for installation.
+Download the scene dataset for the HM3D dataset. We first set the relevant variables for installation, 
+after which we download using the datasets_download method from habitat_sim.
 
 ```bash
+#Source : https://github.com/bdaiinstitute/vlfm
+
+#---- Setting the variables ----------
 MATTERPORT_TOKEN_ID=<FILL IN FROM YOUR ACCOUNT INFO IN MATTERPORT>
 MATTERPORT_TOKEN_SECRET=<FILL IN FROM YOUR ACCOUNT INFO IN MATTERPORT>
 DATA_DIR="habitat-lab/data"
@@ -55,14 +54,16 @@ DATA_DIR="habitat-lab/data"
 HM3D_OBJECTNAV=https://dl.fbaipublicfiles.com/habitat/data/datasets/objectnav/hm3d/v1/objectnav_hm3d_v1.zip
 
 
-#Download the HM3D scene datasets
+#----- Download the HM3D scene datasets --------
 python -m habitat_sim.utils.datasets_download \
   --username $MATTERPORT_TOKEN_ID --password $MATTERPORT_TOKEN_SECRET \
   --uids hm3d_val \
   --data-path $DATA_DIR
 ```
 
-4) Symlink to PersONAL data (contains episodes)
+#### Symlink to PersONAL data
+
+Now that we have the scene data, we assign the PersONAL episodes from the habitat-utils.
 
 ```bash
 #Create directory in habitat-lab
@@ -72,7 +73,9 @@ mkdir -p habitat-lab/data/datasets/PersONAL/active/
 ln -s data/split  habitat-lab/data/datasets/PersONAL/active/val
 ```
 
-5) Update relevant files in habitat-lab to register PersONAL as a valid dataset
+#### Register PersONAL in Habitat
+
+To make Habitat recognize PersONAL, we update relevant files within the Habitat environment.
 
 ```bash
 #Dataset info
@@ -100,7 +103,7 @@ To test the VLFM baseline on the PersONAL dataset, follow the instructions below
 If you need an overview of the changes made to the source code, please 
 refer to the PersONAL_changes.txt file present in the vlfm directory.
 
-1) Create habitat-lab directory
+#### Create habitat-lab directory
 
 ```bash
 #Enter the VLFM directory
@@ -110,7 +113,7 @@ cd vlfm
 ln -s /mnt/PersONAL/habitat-lab habitat-lab
 ```
 
-2) Clone required repositories (as instructed in the source)
+#### Clone required repositories (as instructed in the source)
 
   - GroundingDINO : [https://github.com/IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO)
   - MobileSAM : [https://github.com/ChaoningZhang/MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
@@ -118,7 +121,7 @@ ln -s /mnt/PersONAL/habitat-lab habitat-lab
   - depth_camera_filtering : [https://github.com/naokiyokoyama/depth_camera_filtering/tree/main/depth_camera_filtering](https://github.com/naokiyokoyama/depth_camera_filtering/tree/main/depth_camera_filtering)
   - frontier_exploration : [https://github.com/naokiyokoyama/frontier_exploration/tree/main/frontier_exploration](https://github.com/naokiyokoyama/frontier_exploration/tree/main/frontier_exploration)
 
-3) Download following weights to the data directory:
+#### Download following weights to the data directory:
   - groundingdino_swint_ogc.pth : [https://github.com/IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO)
   - mobile_sam.pt : [https://github.com/ChaoningZhang/MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
   - yolov7-e6e.pt : [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
