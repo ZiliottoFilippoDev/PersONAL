@@ -52,8 +52,8 @@ def get_curr_hab_pos(vec_envs):
                                        function_name = "get_curr_state")
         curr_hab_pos[i] = agent_state.position
 
-    print(f" Current Hab position: {agent_state.position}\n  \
-             Current Hab rotation: {agent_state.rotation}")
+    # print(f" Current Hab position: {agent_state.position}\n  \
+    #          Current Hab rotation: {agent_state.rotation}")
     return curr_hab_pos
 ###
 

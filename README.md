@@ -31,7 +31,6 @@ This repository will host the **code** and **dataset** for the paper:
 - Symlink to data content
   - Create directory path in habitat-lab : mkdir -p data/datasets/PersONAL/active/
   - Create SymLink : ln -s /mnt/PersONAL/data/split  habitat-lab/data/datasets/PersONAL/active/val
-  - (CREATE MEDIUM AND HARD FILT. IS IT NEEDED????)
 - Copy Dataset Info : cp habitat-utils/personalized_object_nav_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/
 - Copy Task Info : cp habitat-utils/personalized_object_nav_task.py habitat-lab/habitat-lab/habitat/tasks/nav/
 - Register Dataset: 

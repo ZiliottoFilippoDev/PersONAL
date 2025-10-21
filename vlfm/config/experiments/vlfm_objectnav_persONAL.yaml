@@ -34,8 +34,8 @@ habitat:
     type: "Personalized-ObjectNav-v1"
     scenes_dir: "data/scene_datasets"
     data_path: "data/datasets/PersONAL/active/val/easy/easy.json.gz"
-    # data_path: "data/datasets/eai_pers/active/val/medium_filt/medium.json.gz"
-    # data_path: "data/datasets/eai_pers/active/val/hard_filt/hard.json.gz"
+    # data_path: "data/datasets/PersONAL/active/val/test_baselines/medium_filt/medium.json.gz"
+    # data_path: "data/datasets/PersONAL/active/val/test_baselines/hard_filt/hard.json.gz"
     content_scenes: ['5cdEh9F2hJL'] #["*"]
 
   simulator:

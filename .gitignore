@@ -64,3 +64,4 @@ vlfm/data/dummy_policy.pth
 vlfm/traced_model.pt
 vlfm/outputs/
 vlfm/tb/
+vlfm/lockfiles/
