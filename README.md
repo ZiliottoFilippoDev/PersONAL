@@ -37,6 +37,8 @@ This repository will host the **code** and **dataset** for the paper:
 - Register Dataset: 
   - cp habitat-utils/register_personalized_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/__init__.py
   - cp habitat-utils/registration.py habitat-lab/habitat-lab/habitat/datasets/registration.py
+- If we need to get the current position in the habitat env:
+  - cp habitat-utils/RL_Env.py habitat-lab/habitat-lab/habitat/core/env.py
 
 (NEED A TEST TO CONFIRM IF ALL WENT )
 
