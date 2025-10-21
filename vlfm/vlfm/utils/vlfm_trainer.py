@@ -123,7 +123,7 @@ class VLFMTrainer(PPOTrainer):
         test_recurrent_hidden_states = torch.zeros(
             (
                 self.config.habitat_baselines.num_environments,
-                *self._agent.hidden_state_shape,
+                *(0, 512), #self._agent.hidden_state_shape,
             ),
             device=self.device,
         )
@@ -173,6 +173,19 @@ class VLFMTrainer(PPOTrainer):
         hab_vis = HabitatVis()
         while len(stats_episodes) < (number_of_eval_episodes * evals_per_ep) and self.envs.num_envs > 0:
             current_episodes_info = self.envs.current_episodes()
+
+            ### ADDED PERSONAL
+            #If episode is done, then re-initialize the scene_name variable
+            if not not_done_masks[0][0]:
+
+                curr_scene_name = os.path.basename(current_episodes_info[0].scene_id).split(".")[0]
+                curr_episode_id = current_episodes_info[0].episode_id
+
+                self._agent.actor_critic.scene_name = curr_scene_name
+
+                print(f"\n\nCurrent Scene Name: {curr_scene_name}")
+                print(f"Current Episode ID: {curr_episode_id}")
+            ###
 
             with inference_mode():
                 action_data = self._agent.actor_critic.act(

@@ -25,6 +25,15 @@ from ..mapping.obstacle_map import ObstacleMap
 from .base_objectnav_policy import BaseObjectNavPolicy, VLFMConfig
 from .itm_policy import ITMPolicy, ITMPolicyV2, ITMPolicyV3
 
+import os
+
+try:
+    from habitat.tasks.nav.personalized_object_nav_task import ObjectGoalSensor as ObjectGoalSensor_Pers              #TODO Added
+    from habitat.tasks.nav.personalized_object_nav_task import get_task_description
+except:
+    print(f"Could not import PersONAL task. This is fine if you are not using this task.")
+
+
 HM3D_ID_TO_NAME = ["chair", "bed", "potted plant", "toilet", "tv", "couch"]
 MP3D_ID_TO_NAME = [
     "chair",
@@ -71,6 +80,9 @@ class HabitatMixin:
     _policy_info: Dict[str, Any] = {}
     _compute_frontiers: bool = False
 
+    PERS_INFO: Dict = {}                # ADDED PERSONAL
+    scene_name: str = None
+
     def __init__(
         self,
         camera_height: float,
@@ -113,6 +125,11 @@ class HabitatMixin:
             kwargs["dataset_type"] = "hm3d"
         elif "mp3d" in config.habitat.dataset.data_path:
             kwargs["dataset_type"] = "mp3d"
+        elif "PersONAL" in config.habitat.dataset.data_path:                    #ADDED PERSONAL
+            kwargs["dataset_type"] = "PersONAL"
+
+            info_dir = os.path.join("habitat-lab", os.path.dirname(config.habitat.dataset.data_path), "content")
+            cls.PERS_INFO["info_dir"] = info_dir
         else:
             raise ValueError("Dataset type could not be inferred from habitat config")
 
@@ -127,13 +144,30 @@ class HabitatMixin:
         deterministic: bool = False,
     ) -> PolicyActionData:
         """Converts object ID to string name, returns action as PolicyActionData"""
-        object_id: int = observations[ObjectGoalSensor.cls_uuid][0].item()
+        # object_id: int = observations[ObjectGoalSensor.cls_uuid][0].item()
+
         obs_dict = observations.to_tree()
         if self._dataset_type == "hm3d":
+            object_id: int = observations[ObjectGoalSensor.cls_uuid][0].item()
             obs_dict[ObjectGoalSensor.cls_uuid] = HM3D_ID_TO_NAME[object_id]
         elif self._dataset_type == "mp3d":
+            object_id: int = observations[ObjectGoalSensor.cls_uuid][0].item()
             obs_dict[ObjectGoalSensor.cls_uuid] = MP3D_ID_TO_NAME[object_id]
             self._non_coco_caption = " . ".join(MP3D_ID_TO_NAME).replace("|", " . ") + " ."
+        elif self._dataset_type == "PersONAL":                                                #ADDED PERSONAL
+            id_list = observations[ObjectGoalSensor_Pers.cls_uuid][0]
+            assert self.scene_name, "Please assign current scene name"
+
+            scene_name, task_id, obj_id_num = self.scene_name, id_list[0], id_list[1]
+            key = f"{scene_name},{task_id.item()},{str(obj_id_num.item())}"
+            
+            if key in self.PERS_INFO: 
+                obs_dict[ObjectGoalSensor_Pers.cls_uuid] = self.PERS_INFO[key]
+            else:
+                obj_descr = get_task_description(id_list, scene_name, self.PERS_INFO["info_dir"])
+                obs_dict[ObjectGoalSensor_Pers.cls_uuid] = obj_descr
+
+                self.PERS_INFO[key] = obj_descr
         else:
             raise ValueError(f"Dataset type {self._dataset_type} not recognized")
         parent_cls: BaseObjectNavPolicy = super()  # type: ignore
