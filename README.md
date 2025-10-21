@@ -115,14 +115,35 @@ ln -s /mnt/PersONAL/habitat-lab habitat-lab
 
 #### Clone required repositories (as instructed in the source)
 
-  - GroundingDINO : [https://github.com/IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO)
-  - MobileSAM : [https://github.com/ChaoningZhang/MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
-  - yolov7 : [github.com/WongKinYiu/yolov7](github.com/WongKinYiu/yolov7)
-  - depth_camera_filtering : [https://github.com/naokiyokoyama/depth_camera_filtering/tree/main/depth_camera_filtering](https://github.com/naokiyokoyama/depth_camera_filtering/tree/main/depth_camera_filtering)
-  - frontier_exploration : [https://github.com/naokiyokoyama/frontier_exploration/tree/main/frontier_exploration](https://github.com/naokiyokoyama/frontier_exploration/tree/main/frontier_exploration)
+```bash
 
-#### Download following weights to the data directory:
-  - groundingdino_swint_ogc.pth : [https://github.com/IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO)
+#GroundingDINO
+git clone https://github.com/IDEA-Research/GroundingDINO
+
+#MobileSAM
+git clone https://github.com/ChaoningZhang/MobileSAM
+
+#Yolov7
+git clone https://github.com/WongKinYiu/yolov7
+
+#depth_camera_filtering
+git clone https://github.com/naokiyokoyama/depth_camera_filtering
+mv depth_camera_filtering depth_camera_filtering_parent
+mv depth_camera_filtering_parent/depth_camera_filtering depth_camera_filtering
+rm -rf depth_camera_filtering_parent
+
+#frontier_exploration
+git clone https://github.com/naokiyokoyama/frontier_exploration
+mv frontier_exploration frontier_exploration_parent
+mv frontier_exploration_parent/frontier_exploration frontier_exploration
+rm -rf frontier_exploration_parent
+```
+
+#### Download model weights
+
+The weights for MobileSAM, GroundingDINO, and PointNav must be saved to the data/ directory. The weights can be downloaded from the following links:
+
+  - > groundingdino_swint_ogc.pth : [https://github.com/IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO)
   - mobile_sam.pt : [https://github.com/ChaoningZhang/MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
   - yolov7-e6e.pt : [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
 
