@@ -2,7 +2,7 @@
 
 ## Baseline : VLFM
 
-### Setting up the Env
+### Setting up the directory
 
 To test the VLFM baseline on the PersONAL dataset, follow the instructions below. Before running, we need to set up a few paths and directories (as required by the source repo). 
 
@@ -13,7 +13,7 @@ refer to the PersONAL_changes.txt file present in the vlfm directory.
 
 ```bash
 #Enter the VLFM directory
-cd baselines/vlfm
+cd vlfm
 
 #Symlink habitat-lab (present in parent dir)
 ln -s \<PATH-TO-PersONAL\>/PersONAL/habitat-lab habitat-lab
@@ -53,18 +53,82 @@ The weights for MobileSAM, GroundingDINO, and Yolov7 must be saved to the `data/
   - `mobile_sam.pt` : [https://github.com/ChaoningZhang/MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
   - `yolov7-e6e.pt` : [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
 
-
-### Training
-
-For training (and evaluation), make sure the current working directory is in `baselines/vlfm/`.
+### Setting up the Conda Env
 
 ```bash
-#Run on PersONAL
-python -m vlfm.run PersONAL_args.log_dir=log/junk
+#Create Conda env
+conda create -n vlfm_query_gui python=3.9 cmake=3.14.0
+conda activate vlfm_query_gui
+
+#Setting up NVCC and CUDA Toolkit
+conda install nvidia/label/cuda-11.7.0::cuda-nvcc -y
+
+#Torch Installation
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
+
+#Habitat Installation
+#For habitat-lab, ensure the symlink is active (see previous section)
+conda install habitat-sim=0.2.5 withbullet -c conda-forge -c aihabitat
+cd habitat-lab
+pip install -e habitat-lab
+pip install -e habitat-baselines
+
+#Lavis Installation
+pip install salesforce-lavis
+
+#Other Installations
+pip install Flask open3d
 ```
 
-### Evaluation
+Check if the installations are correct by using 
+
+#Check if installations are correct
+> python
+> import lavis
+> import cv2
+
+Some common bugs encountered are solved below:
+
+<details>
+<summary>Error: LayerId = cv2.dnn.DictValue</summary>
+
+Reference : https://github.com/facebookresearch/nougat/issues/40
+Solution : Comment out the line containing `LayerId = cv2.dnn.DictValue` from the source `__init__.py` file.
+</details>
+
+If Error: LayerId = cv2.dnn.DictValue, comment out this line from the __init__.py file in cv2 
+(Ref: https://github.com/facebookresearch/nougat/issues/40)
+
+
+### Evaluation on PersONAL
+
+For evaluation, make sure the current working directory is in `PersONAL/baselines/vlfm/`.
 
 ```bash
+#Launch the models
+./scripts/launch_vlm_servers.sh
+
+#Run (evaluate) on PersONAL
+python -m vlfm.run PersONAL_args.log_dir=log/junk
+
+#Read the results from the evaluation runs
 python -m read_results --log_dir log/junk/ --PersONAL_data_type easy
 ```
+
+
+
+
+
+## Baseline : OneMap
+
+Setting up the Env:
+- Clone PersONAL
+- cd PersONAL
+- Clone the OneMap source repo locally and follow source instruction to set up the environment
+- Symlink to source habitat-lab containing PersONAL dataset
+- Changes
+  - Added : eval/dataset_utils -> hm3d_PersONAL_dataset.py
+  - Added : config/mon -> PersONAL_eval_conf.yaml
+  - Added : PersONAL_eval_habitat.py
+  - Added : eval/dataset_utils/__init__.py -> import PersONAL dataset
+  - Added : eval/dataset_utils/common.py -> PersONAL_Episode
