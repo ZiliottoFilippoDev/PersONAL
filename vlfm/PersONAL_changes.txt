@@ -1,0 +1,6 @@
+For reference, these are an overview of the changes made to the source code:
+  - config.experiments -> vlfm_objectnav_persONAL.yaml (habitat task type, dataset and scene_dataset)
+  - vlfm -> run.py (changed config file path)
+  - vlfm.policy -> habitat_policies (changes denoted by "ADDED PERSONAL")
+  - vlfm.utils -> vlfm_trainer (changes denoted by "ADDED PERSONAL")
+  - read_results.py
