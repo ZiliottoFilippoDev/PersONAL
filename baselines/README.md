@@ -122,25 +122,4 @@ python -m read_results --log_dir log/junk/ --PersONAL_data_type easy
 
 
 
-## Baseline : OneMap
 
-Setting up the Env:
-- Clone PersONAL
-- cd PersONAL
-- Clone the OneMap source repo locally and follow source instruction to set up the environment
-- Symlink to source habitat-lab containing PersONAL dataset
-- Changes
-  - Added : eval/dataset_utils -> hm3d_PersONAL_dataset.py
-  - Added : config/mon -> PersONAL_eval_conf.yaml
-  - Added : PersONAL_eval_habitat.py
-  - Added : eval/dataset_utils/__init__.py -> import PersONAL dataset
-  - Added : eval/dataset_utils/common.py -> PersONAL_Episode
-
-
-### Evaluation
-
-```bash
-python3 PersONAL_eval_habitat.py \
---config config/mon/PersONAL_eval_conf.yaml  \
---PlanningConf.using_ov
-```

@@ -38,7 +38,7 @@ conda create -n personal_onemap python=3.9 cmake=3.14.0 -y
 conda activate personal_onemap
 
 #CUDA nvcc
-conda install -c nvidia cuda-nvcc=12.6 -y
+conda install -c nvidia cuda-toolkit=12.6 cuda-nvcc=12.6 -y
 
 #Dependencies
 python3 -m pip install gdown torch torchvision torchaudio meson
@@ -46,7 +46,11 @@ python3 -m pip install -r requirements.txt
 
 python3 -m pip install --upgrade timm>=1.0.7
 
+#Build planning utils
+python3 -m pip install ./planning_cpp/
+
 #Habitat-Sim
+conda remove cuda-toolkit -y
 conda install habitat-sim=0.2.5 withbullet -c conda-forge -c aihabitat
 ```
 
@@ -55,18 +59,21 @@ conda install habitat-sim=0.2.5 withbullet -c conda-forge -c aihabitat
 ```bash
 #Enter the OneMap directory
 cd baselines/OneMap
-
-#Symlink habitat-lab
-# ln -s \<PATH-TO-PersONAL\>/PersONAL/habitat-lab habitat-lab
 ```
 
 
-### Evaluation
+## Evaluation
 
 ```bash
+#Running evaluation on PersONAL
 python3 PersONAL_eval_habitat.py \
 --config config/mon/PersONAL_eval_conf.yaml  \
 --PlanningConf.using_ov
+
+#Reading results
+python3 PersONAL_read_results \
+--log_dir results/easy \
+--PersONAL_data_type easy
 ```
 
 ## Citation

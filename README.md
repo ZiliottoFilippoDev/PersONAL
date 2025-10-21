@@ -98,24 +98,10 @@ cp habitat-utils/RL_Env.py habitat-lab/habitat-lab/habitat/core/env.py
 python -m test
 ```
 
-## Testing Baselines : VLFM
+## Testing Baselines
 
+To test baselines, please look up the `baselines` directory, which contains instructions on setting up the environments, running the evaluation and reading the results.
 
-## Testing Baselines : OneMap
-
-(WRITE INTRO ABOUT ONEMAP. WHY WE CHOSE THIS)
-
-Setting up the Env:
-- Clone PersONAL
-- cd PersONAL
-- Clone the OneMap source repo locally and follow source instruction to set up the environment
-- Symlink to source habitat-lab containing PersONAL dataset
-- Changes
-  - Added : eval/dataset_utils -> hm3d_PersONAL_dataset.py
-  - Added : config/mon -> PersONAL_eval_conf.yaml
-  - Added : PersONAL_eval_habitat.py
-  - Added : eval/dataset_utils/__init__.py -> import PersONAL dataset
-  - Added : eval/dataset_utils/common.py -> PersONAL_Episode
 
 ---
 
