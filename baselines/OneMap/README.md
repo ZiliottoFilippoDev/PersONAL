@@ -54,12 +54,19 @@ conda remove cuda-toolkit -y
 conda install habitat-sim=0.2.5 withbullet -c conda-forge -c aihabitat
 ```
 
-## Evaluation
+## Setting up the Directory
 
 ```bash
 #Enter the OneMap directory
 cd baselines/OneMap
 
+#Symlink Habitat-Lab
+ln -s \<PATH-TO-PersONAL\>/PersONAL/habitat-lab habitat-lab
+```
+
+## Evaluation
+
+```bash
 #Running evaluation on PersONAL
 python3 PersONAL_eval_habitat.py \
 --config config/mon/PersONAL_eval_conf.yaml  \
