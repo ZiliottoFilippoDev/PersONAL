@@ -21,9 +21,7 @@ This repository will host the **code** and **dataset** for the paper:
 
 ---
 
-## Installation
-
-#### Setting up PersONAL Dataset
+## Setting up PersONAL Dataset
 
 - cd PersONAL
 - Cloning habitat-lab : git clone --branch v0.2.5 https://github.com/facebookresearch/habitat-lab
@@ -41,9 +39,9 @@ This repository will host the **code** and **dataset** for the paper:
 
 (NEED A TEST TO CONFIRM IF ALL WENT )
 
-#### Testing Baselines : VLFM
+## Testing Baselines : VLFM
 
-##### Setting up the Env
+#### Setting up the Env
 
 To test the VLFM baseline on the PersONAL dataset, follow the instructions below. Before running, we need to set up a few paths and directories (as required by the source repo). 
 
@@ -76,7 +74,7 @@ For reference, these are an overview of the changes made to the source code:
   - read_results.py
 
 
-##### Training
+#### Training
 
 ```bash
 #Enter the vlfm directory
@@ -86,14 +84,14 @@ cd vlfm
 python -m vlfm.run PersONAL_args.log_dir=log/junk
 ```
 
-##### Evaluation
+#### Evaluation
 
 ```bash
 python -m read_results --log_dir log/junk/ --PersONAL_data_type easy
 ```
 
 
-#### Testing Baselines : OneMap
+## Testing Baselines : OneMap
 
 (WRITE INTRO ABOUT ONEMAP. WHY WE CHOSE THIS)
 
