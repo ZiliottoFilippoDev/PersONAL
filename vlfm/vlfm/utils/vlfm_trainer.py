@@ -41,6 +41,22 @@ def extract_scalars_from_info(info: Dict[str, Any]) -> Dict[str, float]:
     info_filtered = {k: v for k, v in info.items() if not isinstance(v, list)}
     return extract_scalars_from_info_habitat(info_filtered)
 
+### ADDED PERSONAL
+#Get current habitat position for each env
+def get_curr_hab_pos(vec_envs):
+
+    curr_hab_pos = {}
+    for i in range(vec_envs.num_envs):
+
+        agent_state = vec_envs.call_at(index = i,
+                                       function_name = "get_curr_state")
+        curr_hab_pos[i] = agent_state.position
+
+    print(f" Current Hab position: {agent_state.position}\n  \
+             Current Hab rotation: {agent_state.rotation}")
+    return curr_hab_pos
+###
+
 
 @baseline_registry.register_trainer(name="vlfm")
 class VLFMTrainer(PPOTrainer):
@@ -187,6 +203,8 @@ class VLFMTrainer(PPOTrainer):
                 print(f"Current Episode ID: {curr_episode_id}")
             ###
 
+            curr_hab_pos = get_curr_hab_pos(self.envs)[0]
+
             with inference_mode():
                 action_data = self._agent.actor_critic.act(
                     batch,
@@ -237,6 +255,25 @@ class VLFMTrainer(PPOTrainer):
             policy_infos = self._agent.actor_critic.get_extra(action_data, infos, dones)
             for i in range(len(policy_infos)):
                 infos[i].update(policy_infos[i])
+
+
+            ###ADDED PERSONAL
+            # Save the agent position to txt file
+            if (self.config.PersONAL_args.save_trajectory) and \
+                (self._agent.actor_critic._num_steps > 0) and \
+                (self._agent.actor_critic._num_steps < self.config.habitat.environment.max_episode_steps):
+                
+                save_traj_path = os.path.join(self.config.PersONAL_args.log_dir, "trajectory", f"{curr_episode_id}_{curr_scene_name}.txt")
+                os.makedirs(os.path.dirname(save_traj_path), exist_ok = True)
+
+                curr_hab_pos = get_curr_hab_pos(self.envs)[0]
+                num_steps = self._agent.actor_critic._num_steps
+                
+                with open(save_traj_path, "a" if num_steps > 1 else "w") as f:
+                    f.write(f"{self._agent.actor_critic._num_steps}, {curr_hab_pos[0]}, {curr_hab_pos[1]}, {curr_hab_pos[2]}\n")
+                    # print(f"Saved Trajectory at step {num_steps} to {save_traj_path}")
+            ###
+
             batch = batch_obs(  # type: ignore
                 observations,
                 device=self.device,

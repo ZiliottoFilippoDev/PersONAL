@@ -110,3 +110,8 @@ habitat_baselines:
       backbone: resnet50
       rnn_type: LSTM
       num_recurrent_layers: 2
+
+
+PersONAL_args:
+  save_trajectory: True
+  log_dir: "log/junk"
