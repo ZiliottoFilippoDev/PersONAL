@@ -23,19 +23,71 @@ This repository will host the **code** and **dataset** for the paper:
 
 ## Setting up PersONAL Dataset
 
-- cd PersONAL
-- Cloning habitat-lab : git clone --branch v0.2.5 https://github.com/facebookresearch/habitat-lab
-- Download HM3D data to habitat-lab/data
-- Symlink to data content
-  - Create directory path in habitat-lab : mkdir -p data/datasets/PersONAL/active/
-  - Create SymLink : ln -s /mnt/PersONAL/data/split  habitat-lab/data/datasets/PersONAL/active/val
-- Copy Dataset Info : cp habitat-utils/personalized_object_nav_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/
-- Copy Task Info : cp habitat-utils/personalized_object_nav_task.py habitat-lab/habitat-lab/habitat/tasks/nav/
-- Register Dataset: 
-  - cp habitat-utils/register_personalized_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/__init__.py
-  - cp habitat-utils/registration.py habitat-lab/habitat-lab/habitat/datasets/registration.py
-- If we need to get the current position in the habitat env:
-  - cp habitat-utils/RL_Env.py habitat-lab/habitat-lab/habitat/core/env.py
+To set up the dataset in Habitat, please follow the below instructions. 
+
+1) Clone the repository
+
+```bash
+git clone https://github.com/ZiliottoFilippoDev/PersONAL
+
+cd PersONAL
+```
+
+2) Clone habitat-lab
+
+```bash
+git clone --branch v0.2.5 https://github.com/facebookresearch/habitat-lab
+```
+
+3) Download HM3D data (as per VLFM source repo)
+
+First, set the relevant variables for installation.
+
+```bash
+MATTERPORT_TOKEN_ID=<FILL IN FROM YOUR ACCOUNT INFO IN MATTERPORT>
+MATTERPORT_TOKEN_SECRET=<FILL IN FROM YOUR ACCOUNT INFO IN MATTERPORT>
+DATA_DIR="habitat-lab/data"
+
+# Link to the HM3D ObjectNav episodes dataset, listed here:
+# https://github.com/facebookresearch/habitat-lab/blob/main/DATASETS.md#task-datasets
+# From the above page, locate the link to the HM3D ObjectNav dataset.
+# Verify that it is the same as the next two lines.
+HM3D_OBJECTNAV=https://dl.fbaipublicfiles.com/habitat/data/datasets/objectnav/hm3d/v1/objectnav_hm3d_v1.zip
+
+
+#Download the HM3D scene datasets
+python -m habitat_sim.utils.datasets_download \
+  --username $MATTERPORT_TOKEN_ID --password $MATTERPORT_TOKEN_SECRET \
+  --uids hm3d_val \
+  --data-path $DATA_DIR
+```
+
+4) Symlink to PersONAL data (contains episodes)
+
+```bash
+#Create directory in habitat-lab
+mkdir -p habitat-lab/data/datasets/PersONAL/active/
+
+#Create symlink
+ln -s data/split  habitat-lab/data/datasets/PersONAL/active/val
+```
+
+5) Update relevant files in habitat-lab to register PersONAL as a valid dataset
+
+```bash
+#Dataset info
+cp habitat-utils/personalized_object_nav_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/
+
+#Task info
+cp habitat-utils/personalized_object_nav_task.py habitat-lab/habitat-lab/habitat/tasks/nav/
+
+#Register PersONAL
+cp habitat-utils/register_personalized_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/__init__.py
+cp habitat-utils/registration.py habitat-lab/habitat-lab/habitat/datasets/registration.py
+
+#Util : Obtain current habitat position and rotation
+cp habitat-utils/RL_Env.py habitat-lab/habitat-lab/habitat/core/env.py
+```
 
 (NEED A TEST TO CONFIRM IF ALL WENT )
 
