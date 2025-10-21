@@ -91,16 +91,14 @@ Some common bugs encountered are solved below:
 <details>
 <summary>Error: LayerId = cv2.dnn.DictValue</summary>
 
-
-Reference : https://github.com/facebookresearch/nougat/issues/40
+Reference : https://github.com/facebookresearch/nougat/issues/40  
 Solution : Comment out the line containing `LayerId = cv2.dnn.DictValue` from the source `__init__.py` file.
 </details>
 
 <details>
 <summary>Error Message: GL::Context: cannot retrieve OpenGL version: GL::Renderer::Error::InvalidValue</summary>
 
-
-Reference : https://github.com/facebookresearch/habitat-sim/pull/2519
+Reference : https://github.com/facebookresearch/habitat-sim/pull/2519  
 Solution : `conda remove libva libgl libglx libegl libglvnd`
 </details>
 
