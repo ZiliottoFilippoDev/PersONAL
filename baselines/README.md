@@ -78,26 +78,29 @@ pip install salesforce-lavis
 
 #Other Installations
 pip install Flask open3d
+
+
+# --- Check if installations are correct ----
+# Start python in terminal
+import lavis
+import cv2
 ```
-
-Check if the installations are correct by using 
-
-#Check if installations are correct
-> python
-> import lavis
-> import cv2
 
 Some common bugs encountered are solved below:
 
 <details>
 <summary>Error: LayerId = cv2.dnn.DictValue</summary>
 
-Reference : https://github.com/facebookresearch/nougat/issues/40
+Reference : https://github.com/facebookresearch/nougat/issues/40 \\
 Solution : Comment out the line containing `LayerId = cv2.dnn.DictValue` from the source `__init__.py` file.
 </details>
 
-If Error: LayerId = cv2.dnn.DictValue, comment out this line from the __init__.py file in cv2 
-(Ref: https://github.com/facebookresearch/nougat/issues/40)
+<details>
+<summary>Error Message: GL::Context: cannot retrieve OpenGL version: GL::Renderer::Error::InvalidValue</summary>
+
+Reference : https://github.com/facebookresearch/habitat-sim/pull/2519 \\
+Solution : `conda remove libva libgl libglx libegl libglvnd`
+</details>
 
 
 ### Evaluation on PersONAL
