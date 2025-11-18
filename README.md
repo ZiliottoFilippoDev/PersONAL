@@ -16,7 +16,9 @@ This repository will host the **code** and **dataset** for the paper:
 ---
 
 ## 📢 Updates
-- Code and dataset will be released soon. Stay tuned! 🚀  
+- The dataset is available on the `data` folder 🚀  
+- The dataset Generation code is available on the `dataset_generation` folder. 🚀  
+- Baseline Codes and new features will be released soon. Stay tuned! 🚀  
 - Please consider starring ⭐ this repository to receive the latest updates.
 
 ---
