@@ -1,0 +1,286 @@
+[
+    {
+        "object_category": "cabinet",
+        "count": 254
+    },
+    {
+        "object_category": "chair",
+        "count": 194
+    },
+    {
+        "object_category": "table",
+        "count": 96
+    },
+    {
+        "object_category": "bed",
+        "count": 81
+    },
+    {
+        "object_category": "couch",
+        "count": 59
+    },
+    {
+        "object_category": "tv",
+        "count": 58
+    },
+    {
+        "object_category": "wardrobe",
+        "count": 55
+    },
+    {
+        "object_category": "bathroom cabinet",
+        "count": 42
+    },
+    {
+        "object_category": "sink",
+        "count": 39
+    },
+    {
+        "object_category": "clothes",
+        "count": 35
+    },
+    {
+        "object_category": "toilet",
+        "count": 35
+    },
+    {
+        "object_category": "box",
+        "count": 35
+    },
+    {
+        "object_category": "towel",
+        "count": 32
+    },
+    {
+        "object_category": "desk",
+        "count": 30
+    },
+    {
+        "object_category": "bathtub",
+        "count": 29
+    },
+    {
+        "object_category": "washing machine",
+        "count": 28
+    },
+    {
+        "object_category": "kitchen lower cabinet",
+        "count": 25
+    },
+    {
+        "object_category": "heater",
+        "count": 24
+    },
+    {
+        "object_category": "rack",
+        "count": 24
+    },
+    {
+        "object_category": "blanket",
+        "count": 23
+    },
+    {
+        "object_category": "kitchen shelf",
+        "count": 22
+    },
+    {
+        "object_category": "board",
+        "count": 20
+    },
+    {
+        "object_category": "sink cabinet",
+        "count": 20
+    },
+    {
+        "object_category": "stool",
+        "count": 19
+    },
+    {
+        "object_category": "drawer",
+        "count": 16
+    },
+    {
+        "object_category": "sofa chair",
+        "count": 14
+    },
+    {
+        "object_category": "bench",
+        "count": 13
+    },
+    {
+        "object_category": "oven",
+        "count": 13
+    },
+    {
+        "object_category": "oven and stove",
+        "count": 13
+    },
+    {
+        "object_category": "cloth",
+        "count": 13
+    },
+    {
+        "object_category": "display cabinet",
+        "count": 11
+    },
+    {
+        "object_category": "stove",
+        "count": 10
+    },
+    {
+        "object_category": "bag",
+        "count": 10
+    },
+    {
+        "object_category": "toy",
+        "count": 10
+    },
+    {
+        "object_category": "container",
+        "count": 9
+    },
+    {
+        "object_category": "clothes dryer",
+        "count": 6
+    },
+    {
+        "object_category": "shower cabin",
+        "count": 6
+    },
+    {
+        "object_category": "bath towel",
+        "count": 6
+    },
+    {
+        "object_category": "bathroom towel",
+        "count": 6
+    },
+    {
+        "object_category": "basket",
+        "count": 6
+    },
+    {
+        "object_category": "washer-dryer",
+        "count": 6
+    },
+    {
+        "object_category": "countertop",
+        "count": 6
+    },
+    {
+        "object_category": "sofa seat",
+        "count": 5
+    },
+    {
+        "object_category": "washbasin",
+        "count": 5
+    },
+    {
+        "object_category": "balustrade",
+        "count": 5
+    },
+    {
+        "object_category": "monitor",
+        "count": 4
+    },
+    {
+        "object_category": "iron board",
+        "count": 4
+    },
+    {
+        "object_category": "bathrobe",
+        "count": 3
+    },
+    {
+        "object_category": "sideboard",
+        "count": 3
+    },
+    {
+        "object_category": "worktop",
+        "count": 3
+    },
+    {
+        "object_category": "handbag",
+        "count": 2
+    },
+    {
+        "object_category": "closet shelf",
+        "count": 2
+    },
+    {
+        "object_category": "case",
+        "count": 2
+    },
+    {
+        "object_category": "plush toy",
+        "count": 2
+    },
+    {
+        "object_category": "shower rail",
+        "count": 2
+    },
+    {
+        "object_category": "bathtub platform",
+        "count": 2
+    },
+    {
+        "object_category": "kitchen appliance",
+        "count": 2
+    },
+    {
+        "object_category": "spa bench",
+        "count": 2
+    },
+    {
+        "object_category": "office chair",
+        "count": 2
+    },
+    {
+        "object_category": "kitchen countertop items",
+        "count": 1
+    },
+    {
+        "object_category": "window shutter",
+        "count": 1
+    },
+    {
+        "object_category": "shower soap shelf",
+        "count": 1
+    },
+    {
+        "object_category": "flag",
+        "count": 1
+    },
+    {
+        "object_category": "mantle",
+        "count": 1
+    },
+    {
+        "object_category": "sofa set",
+        "count": 1
+    },
+    {
+        "object_category": "shower",
+        "count": 1
+    },
+    {
+        "object_category": "cabinet table",
+        "count": 1
+    },
+    {
+        "object_category": "cooker",
+        "count": 1
+    },
+    {
+        "object_category": "crib",
+        "count": 1
+    },
+    {
+        "object_category": "cardboard box",
+        "count": 1
+    },
+    {
+        "object_category": "fire extinguisher",
+        "count": 1
+    }
+]

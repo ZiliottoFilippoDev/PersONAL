@@ -1,0 +1,69 @@
+######################
+READMEEEEEEEEEEEEEE  #
+######################
+THIS HAS ONLY TO BE USED TO GENERATE A TRIAL PROMPT , THE CODE TAKES THE PROMPT FROM personalized/prompts/generate_prompt.py
+IF YOU UPDATE THIS MAKE SURE YOU UPDATE ALSO THE PROMPT IN generate_prompts.py. THIS TXT WILL BE DELETED IN THE FUTURE
+
+######################
+PROMPT  #
+######################
+
+PROMPT = """You are given a JSON list of objects, each representing an item in a house.  
+Each object includes details about the object's category, unique identifier, floor, description, position, and room (if available).
+
+### Input Example:
+[
+  {
+    "object_category": "bed",
+    "object_id": "bed_001",
+    "room": "bedroom",
+    "floor_id": 1,
+    "description": ["a blue and white king-sized bed near the window"],
+    "position": [2.5, 3.0, 7.2],  // [x, y (height), z]
+  },
+  {
+    "object_category": "refridgerator",
+    "object_id": "refridgerator_24",
+    "room": "kitchen",
+    "floor_id": 1,
+    "description": ["a black stainless steel refridgerator"],
+    "position": [1.5, 3.0, 2.3],  // [x, y (height), z]
+  },
+  ...
+]
+
+### Task:
+1. **Object Selection:**  
+   - From the input list, select **between MIN_OBJECTS and MAX_OBJECTS objects**. You have to create a summary that includes details about these objects.  
+   - Choose objects that are more detailed or situated in relevant areas (e.g., items in the living room, kitchen, bedroom, etc.).  
+   - Ensure that across N_SUMMARIES summaries, the object combinations are as distinct as possible.
+   - For each summary aim for spatial diversity by picking objects from diverse rooms or zones.
+
+2. **Summary Creation:**  
+   - Create N_SUMMARIES different summaries.  
+   - Each summary should be a natural, flowing paragraph that includes details (floor, room, object attributes) and ownership information.  
+   - For ownership references, replace real names with placeholders like <person1>, <person2>, ..., up to <personM>, where M is the number of chosen objects (e.g., "the comfortable wooden chair owned by <person1>").
+   - For a summary, the same object can belong to multiple people, viceversa a person can own multiple objects, but the summary should still be coherent and natural.
+  
+3. **Output Format:**  
+   - The output **must be a raw JSON object**, without any Markdown formatting (e.g., no triple backticks or extra text).  
+   - The JSON should have the following structure:
+  {
+    "summaries": [
+      {
+      "selected_items": [
+        {"object_id": "bed_001", "owner": "<person1>"},
+        {"object_id": "refridgerator_24", "owner": "<person2>"}
+      ],
+      "summary": "In the first-floor bedroom, there is a blue and white king-sized bed near the window that belongs to <person1>, while in the kitchen, a black stainless-steel refrigerator owned by <person2>.",
+      "extracted_summary": "<person1> owns a blue and white king-sized bed near the window in the bedroom. <person2> owns a black stainless steel refrigerator in the kitchen."
+      },
+      // Additional OTHER_SUMMARIES summary objects with different combinations
+    ]
+  }
+
+4. **Additional Instructions:**  
+   - **The output MUST be strictly formatted as JSON.** Do not include any introductory/explanatory text or Markdown formatting.  
+   - If a person owns multiple objects, the extracted summary should still include a separate ownership sentence for each object.
+   - **Each extracted summary must include ownership statements and room locations using "owns", be separated by periods, and exclude any mention of floor details** (e.g., "first-floor").""" 
+   

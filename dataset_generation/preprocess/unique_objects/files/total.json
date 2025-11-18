@@ -1,0 +1,1382 @@
+[
+    {
+        "object_category": "cabinet",
+        "count": 1550
+    },
+    {
+        "object_category": "chair",
+        "count": 1024
+    },
+    {
+        "object_category": "table",
+        "count": 479
+    },
+    {
+        "object_category": "bed",
+        "count": 360
+    },
+    {
+        "object_category": "couch",
+        "count": 309
+    },
+    {
+        "object_category": "tv",
+        "count": 282
+    },
+    {
+        "object_category": "wardrobe",
+        "count": 282
+    },
+    {
+        "object_category": "bathroom cabinet",
+        "count": 139
+    },
+    {
+        "object_category": "sink",
+        "count": 215
+    },
+    {
+        "object_category": "clothes",
+        "count": 221
+    },
+    {
+        "object_category": "toilet",
+        "count": 180
+    },
+    {
+        "object_category": "box",
+        "count": 168
+    },
+    {
+        "object_category": "towel",
+        "count": 168
+    },
+    {
+        "object_category": "desk",
+        "count": 186
+    },
+    {
+        "object_category": "bathtub",
+        "count": 154
+    },
+    {
+        "object_category": "washing machine",
+        "count": 119
+    },
+    {
+        "object_category": "kitchen lower cabinet",
+        "count": 123
+    },
+    {
+        "object_category": "heater",
+        "count": 80
+    },
+    {
+        "object_category": "rack",
+        "count": 150
+    },
+    {
+        "object_category": "blanket",
+        "count": 78
+    },
+    {
+        "object_category": "kitchen shelf",
+        "count": 29
+    },
+    {
+        "object_category": "board",
+        "count": 85
+    },
+    {
+        "object_category": "sink cabinet",
+        "count": 86
+    },
+    {
+        "object_category": "stool",
+        "count": 54
+    },
+    {
+        "object_category": "drawer",
+        "count": 55
+    },
+    {
+        "object_category": "sofa chair",
+        "count": 54
+    },
+    {
+        "object_category": "bench",
+        "count": 74
+    },
+    {
+        "object_category": "oven",
+        "count": 101
+    },
+    {
+        "object_category": "oven and stove",
+        "count": 52
+    },
+    {
+        "object_category": "cloth",
+        "count": 41
+    },
+    {
+        "object_category": "display cabinet",
+        "count": 61
+    },
+    {
+        "object_category": "stove",
+        "count": 57
+    },
+    {
+        "object_category": "bag",
+        "count": 63
+    },
+    {
+        "object_category": "toy",
+        "count": 40
+    },
+    {
+        "object_category": "container",
+        "count": 46
+    },
+    {
+        "object_category": "clothes dryer",
+        "count": 14
+    },
+    {
+        "object_category": "shower cabin",
+        "count": 41
+    },
+    {
+        "object_category": "bath towel",
+        "count": 24
+    },
+    {
+        "object_category": "bathroom towel",
+        "count": 19
+    },
+    {
+        "object_category": "basket",
+        "count": 29
+    },
+    {
+        "object_category": "washer-dryer",
+        "count": 16
+    },
+    {
+        "object_category": "countertop",
+        "count": 48
+    },
+    {
+        "object_category": "sofa seat",
+        "count": 21
+    },
+    {
+        "object_category": "washbasin",
+        "count": 33
+    },
+    {
+        "object_category": "balustrade",
+        "count": 13
+    },
+    {
+        "object_category": "monitor",
+        "count": 49
+    },
+    {
+        "object_category": "iron board",
+        "count": 6
+    },
+    {
+        "object_category": "bathrobe",
+        "count": 16
+    },
+    {
+        "object_category": "sideboard",
+        "count": 9
+    },
+    {
+        "object_category": "worktop",
+        "count": 15
+    },
+    {
+        "object_category": "handbag",
+        "count": 3
+    },
+    {
+        "object_category": "closet shelf",
+        "count": 6
+    },
+    {
+        "object_category": "case",
+        "count": 18
+    },
+    {
+        "object_category": "plush toy",
+        "count": 5
+    },
+    {
+        "object_category": "shower rail",
+        "count": 4
+    },
+    {
+        "object_category": "bathtub platform",
+        "count": 6
+    },
+    {
+        "object_category": "kitchen appliance",
+        "count": 9
+    },
+    {
+        "object_category": "spa bench",
+        "count": 3
+    },
+    {
+        "object_category": "office chair",
+        "count": 37
+    },
+    {
+        "object_category": "kitchen countertop items",
+        "count": 2
+    },
+    {
+        "object_category": "window shutter",
+        "count": 1
+    },
+    {
+        "object_category": "shower soap shelf",
+        "count": 2
+    },
+    {
+        "object_category": "flag",
+        "count": 7
+    },
+    {
+        "object_category": "mantle",
+        "count": 3
+    },
+    {
+        "object_category": "sofa set",
+        "count": 1
+    },
+    {
+        "object_category": "shower",
+        "count": 12
+    },
+    {
+        "object_category": "cabinet table",
+        "count": 5
+    },
+    {
+        "object_category": "cooker",
+        "count": 13
+    },
+    {
+        "object_category": "crib",
+        "count": 10
+    },
+    {
+        "object_category": "cardboard box",
+        "count": 41
+    },
+    {
+        "object_category": "fire extinguisher",
+        "count": 5
+    },
+    {
+        "object_category": "shelving",
+        "count": 43
+    },
+    {
+        "object_category": "closet",
+        "count": 37
+    },
+    {
+        "object_category": "sunbed",
+        "count": 35
+    },
+    {
+        "object_category": "seat",
+        "count": 28
+    },
+    {
+        "object_category": "ladder",
+        "count": 23
+    },
+    {
+        "object_category": "clutter",
+        "count": 21
+    },
+    {
+        "object_category": "kitchen top",
+        "count": 20
+    },
+    {
+        "object_category": "book rack",
+        "count": 19
+    },
+    {
+        "object_category": "lounge chair",
+        "count": 19
+    },
+    {
+        "object_category": "clock",
+        "count": 18
+    },
+    {
+        "object_category": "air conditioner",
+        "count": 16
+    },
+    {
+        "object_category": "trashcan",
+        "count": 15
+    },
+    {
+        "object_category": "ornament",
+        "count": 15
+    },
+    {
+        "object_category": "kitchen cabinet lower",
+        "count": 14
+    },
+    {
+        "object_category": "gym equipment",
+        "count": 14
+    },
+    {
+        "object_category": "pouffe",
+        "count": 14
+    },
+    {
+        "object_category": "artwork",
+        "count": 14
+    },
+    {
+        "object_category": "brochure",
+        "count": 14
+    },
+    {
+        "object_category": "range hood",
+        "count": 14
+    },
+    {
+        "object_category": "jacket",
+        "count": 13
+    },
+    {
+        "object_category": "bathroom shelf",
+        "count": 13
+    },
+    {
+        "object_category": "note",
+        "count": 13
+    },
+    {
+        "object_category": "figure",
+        "count": 13
+    },
+    {
+        "object_category": "hat",
+        "count": 13
+    },
+    {
+        "object_category": "stack of papers",
+        "count": 12
+    },
+    {
+        "object_category": "screen",
+        "count": 12
+    },
+    {
+        "object_category": "locker",
+        "count": 11
+    },
+    {
+        "object_category": "stone support structure",
+        "count": 10
+    },
+    {
+        "object_category": "elevator",
+        "count": 10
+    },
+    {
+        "object_category": "storage shelving",
+        "count": 9
+    },
+    {
+        "object_category": "stand",
+        "count": 9
+    },
+    {
+        "object_category": "tray",
+        "count": 9
+    },
+    {
+        "object_category": "vacuum cleaner",
+        "count": 8
+    },
+    {
+        "object_category": "patio chair",
+        "count": 8
+    },
+    {
+        "object_category": "rocking chair",
+        "count": 8
+    },
+    {
+        "object_category": "kitchen extractor",
+        "count": 7
+    },
+    {
+        "object_category": "storage cabinet",
+        "count": 7
+    },
+    {
+        "object_category": "umbrella",
+        "count": 7
+    },
+    {
+        "object_category": "massage bed",
+        "count": 7
+    },
+    {
+        "object_category": "stovetop",
+        "count": 7
+    },
+    {
+        "object_category": "treadmill",
+        "count": 7
+    },
+    {
+        "object_category": "shower-bath cabinet",
+        "count": 7
+    },
+    {
+        "object_category": "laundry basket",
+        "count": 6
+    },
+    {
+        "object_category": "washbasin counter",
+        "count": 6
+    },
+    {
+        "object_category": "whiteboard",
+        "count": 6
+    },
+    {
+        "object_category": "tool",
+        "count": 6
+    },
+    {
+        "object_category": "bed comforter",
+        "count": 6
+    },
+    {
+        "object_category": "storage",
+        "count": 6
+    },
+    {
+        "object_category": "crate",
+        "count": 6
+    },
+    {
+        "object_category": "counter",
+        "count": 5
+    },
+    {
+        "object_category": "pool table",
+        "count": 5
+    },
+    {
+        "object_category": "amplifier",
+        "count": 5
+    },
+    {
+        "object_category": "archway",
+        "count": 5
+    },
+    {
+        "object_category": "pile of magazines",
+        "count": 5
+    },
+    {
+        "object_category": "pot",
+        "count": 5
+    },
+    {
+        "object_category": "painting frame",
+        "count": 5
+    },
+    {
+        "object_category": "hunting trophy",
+        "count": 5
+    },
+    {
+        "object_category": "grill",
+        "count": 5
+    },
+    {
+        "object_category": "sign",
+        "count": 5
+    },
+    {
+        "object_category": "dressing table",
+        "count": 4
+    },
+    {
+        "object_category": "high shelf",
+        "count": 4
+    },
+    {
+        "object_category": "water dispenser",
+        "count": 4
+    },
+    {
+        "object_category": "tank",
+        "count": 4
+    },
+    {
+        "object_category": "bar cabinet",
+        "count": 4
+    },
+    {
+        "object_category": "display table",
+        "count": 4
+    },
+    {
+        "object_category": "backrest",
+        "count": 4
+    },
+    {
+        "object_category": "coat",
+        "count": 4
+    },
+    {
+        "object_category": "wood",
+        "count": 4
+    },
+    {
+        "object_category": "cart",
+        "count": 4
+    },
+    {
+        "object_category": "book cabinet",
+        "count": 3
+    },
+    {
+        "object_category": "antique clock",
+        "count": 3
+    },
+    {
+        "object_category": "bar",
+        "count": 3
+    },
+    {
+        "object_category": "aquarium",
+        "count": 3
+    },
+    {
+        "object_category": "electrical controller",
+        "count": 3
+    },
+    {
+        "object_category": "handle",
+        "count": 3
+    },
+    {
+        "object_category": "candle holder",
+        "count": 3
+    },
+    {
+        "object_category": "paper",
+        "count": 3
+    },
+    {
+        "object_category": "hose",
+        "count": 3
+    },
+    {
+        "object_category": "duct",
+        "count": 3
+    },
+    {
+        "object_category": "robe",
+        "count": 3
+    },
+    {
+        "object_category": "laptop",
+        "count": 3
+    },
+    {
+        "object_category": "magazine",
+        "count": 3
+    },
+    {
+        "object_category": "fence",
+        "count": 3
+    },
+    {
+        "object_category": "bulletin board",
+        "count": 3
+    },
+    {
+        "object_category": "arcade game",
+        "count": 3
+    },
+    {
+        "object_category": "laundry",
+        "count": 3
+    },
+    {
+        "object_category": "relief",
+        "count": 3
+    },
+    {
+        "object_category": "urinal",
+        "count": 3
+    },
+    {
+        "object_category": "clothing stand",
+        "count": 2
+    },
+    {
+        "object_category": "headboard",
+        "count": 2
+    },
+    {
+        "object_category": "newspaper",
+        "count": 2
+    },
+    {
+        "object_category": "candle",
+        "count": 2
+    },
+    {
+        "object_category": "water tank",
+        "count": 2
+    },
+    {
+        "object_category": "wreath",
+        "count": 2
+    },
+    {
+        "object_category": "lamp stand",
+        "count": 2
+    },
+    {
+        "object_category": "wine cabinet",
+        "count": 2
+    },
+    {
+        "object_category": "stage",
+        "count": 2
+    },
+    {
+        "object_category": "paper towel",
+        "count": 2
+    },
+    {
+        "object_category": "banner",
+        "count": 2
+    },
+    {
+        "object_category": "balcony railing",
+        "count": 2
+    },
+    {
+        "object_category": "closet shelving",
+        "count": 2
+    },
+    {
+        "object_category": "barbecue",
+        "count": 2
+    },
+    {
+        "object_category": "antique telephone",
+        "count": 2
+    },
+    {
+        "object_category": "shelf cubby",
+        "count": 2
+    },
+    {
+        "object_category": "gate",
+        "count": 2
+    },
+    {
+        "object_category": "firewood",
+        "count": 2
+    },
+    {
+        "object_category": "canvas",
+        "count": 2
+    },
+    {
+        "object_category": "storage space",
+        "count": 2
+    },
+    {
+        "object_category": "dishrag",
+        "count": 2
+    },
+    {
+        "object_category": "scarf",
+        "count": 2
+    },
+    {
+        "object_category": "record player",
+        "count": 2
+    },
+    {
+        "object_category": "paper storage",
+        "count": 2
+    },
+    {
+        "object_category": "decorative plate",
+        "count": 2
+    },
+    {
+        "object_category": "hutch",
+        "count": 2
+    },
+    {
+        "object_category": "copier machine",
+        "count": 2
+    },
+    {
+        "object_category": "sauna oven",
+        "count": 1
+    },
+    {
+        "object_category": "schedule",
+        "count": 1
+    },
+    {
+        "object_category": "stack of stuff",
+        "count": 1
+    },
+    {
+        "object_category": "pantry",
+        "count": 1
+    },
+    {
+        "object_category": "photo stand",
+        "count": 1
+    },
+    {
+        "object_category": "pool",
+        "count": 1
+    },
+    {
+        "object_category": "stereo set",
+        "count": 1
+    },
+    {
+        "object_category": "exercise ladder",
+        "count": 1
+    },
+    {
+        "object_category": "double armchair",
+        "count": 1
+    },
+    {
+        "object_category": "sleeping bag",
+        "count": 1
+    },
+    {
+        "object_category": "light switch",
+        "count": 1
+    },
+    {
+        "object_category": "tent",
+        "count": 1
+    },
+    {
+        "object_category": "medical lamp",
+        "count": 1
+    },
+    {
+        "object_category": "board game",
+        "count": 1
+    },
+    {
+        "object_category": "kitchen sink",
+        "count": 1
+    },
+    {
+        "object_category": "bottle",
+        "count": 1
+    },
+    {
+        "object_category": "foosball game table",
+        "count": 1
+    },
+    {
+        "object_category": "foot spa",
+        "count": 1
+    },
+    {
+        "object_category": "jewelry box",
+        "count": 1
+    },
+    {
+        "object_category": "cardboard",
+        "count": 1
+    },
+    {
+        "object_category": "cosmetics",
+        "count": 1
+    },
+    {
+        "object_category": "hook",
+        "count": 1
+    },
+    {
+        "object_category": "easy chair",
+        "count": 1
+    },
+    {
+        "object_category": "clothes bag",
+        "count": 1
+    },
+    {
+        "object_category": "jacuzzi",
+        "count": 1
+    },
+    {
+        "object_category": "drawer sink table",
+        "count": 1
+    },
+    {
+        "object_category": "fish tank",
+        "count": 1
+    },
+    {
+        "object_category": "sled",
+        "count": 1
+    },
+    {
+        "object_category": "kitchen table",
+        "count": 1
+    },
+    {
+        "object_category": "cradle",
+        "count": 1
+    },
+    {
+        "object_category": "mixer",
+        "count": 1
+    },
+    {
+        "object_category": "gas furnace",
+        "count": 1
+    },
+    {
+        "object_category": "water fountain",
+        "count": 1
+    },
+    {
+        "object_category": "office table",
+        "count": 1
+    },
+    {
+        "object_category": "radio",
+        "count": 1
+    },
+    {
+        "object_category": "plate",
+        "count": 1
+    },
+    {
+        "object_category": "staircase trim",
+        "count": 1
+    },
+    {
+        "object_category": "elephant sculpture",
+        "count": 1
+    },
+    {
+        "object_category": "desk lamp",
+        "count": 1
+    },
+    {
+        "object_category": "shower tap",
+        "count": 1
+    },
+    {
+        "object_category": "backsplash",
+        "count": 1
+    },
+    {
+        "object_category": "tile",
+        "count": 1
+    },
+    {
+        "object_category": "telephone",
+        "count": 1
+    },
+    {
+        "object_category": "sink table",
+        "count": 1
+    },
+    {
+        "object_category": "desk cabinet",
+        "count": 1
+    },
+    {
+        "object_category": "bunk bed",
+        "count": 1
+    },
+    {
+        "object_category": "power breaker box",
+        "count": 1
+    },
+    {
+        "object_category": "dish rack",
+        "count": 1
+    },
+    {
+        "object_category": "baby changing station",
+        "count": 1
+    },
+    {
+        "object_category": "guitar frame",
+        "count": 1
+    },
+    {
+        "object_category": "sheet",
+        "count": 1
+    },
+    {
+        "object_category": "shower bar",
+        "count": 1
+    },
+    {
+        "object_category": "exhibition panel",
+        "count": 1
+    },
+    {
+        "object_category": "purse",
+        "count": 1
+    },
+    {
+        "object_category": "decorative quilt",
+        "count": 1
+    },
+    {
+        "object_category": "cabinet clutter",
+        "count": 1
+    },
+    {
+        "object_category": "cleaning clutter",
+        "count": 1
+    },
+    {
+        "object_category": "soft chair",
+        "count": 1
+    },
+    {
+        "object_category": "icebox",
+        "count": 1
+    },
+    {
+        "object_category": "trampoline",
+        "count": 1
+    },
+    {
+        "object_category": "grass",
+        "count": 1
+    },
+    {
+        "object_category": "round chair",
+        "count": 1
+    },
+    {
+        "object_category": "telescope",
+        "count": 1
+    },
+    {
+        "object_category": "shower stall",
+        "count": 1
+    },
+    {
+        "object_category": "folding table",
+        "count": 1
+    },
+    {
+        "object_category": "spice rack",
+        "count": 1
+    },
+    {
+        "object_category": "chimney",
+        "count": 1
+    },
+    {
+        "object_category": "swivel chair",
+        "count": 1
+    },
+    {
+        "object_category": "bathroom accessory",
+        "count": 1
+    },
+    {
+        "object_category": "solarium",
+        "count": 1
+    },
+    {
+        "object_category": "kitchen cabinet",
+        "count": 146
+    },
+    {
+        "object_category": "shelf",
+        "count": 96
+    },
+    {
+        "object_category": "armchair",
+        "count": 62
+    },
+    {
+        "object_category": "dining chair",
+        "count": 52
+    },
+    {
+        "object_category": "lamp",
+        "count": 35
+    },
+    {
+        "object_category": "fireplace",
+        "count": 21
+    },
+    {
+        "object_category": "cushion",
+        "count": 13
+    },
+    {
+        "object_category": "chest of drawers",
+        "count": 13
+    },
+    {
+        "object_category": "stairs railing",
+        "count": 10
+    },
+    {
+        "object_category": "kitchen counter",
+        "count": 10
+    },
+    {
+        "object_category": "coffee table",
+        "count": 9
+    },
+    {
+        "object_category": "desk chair",
+        "count": 9
+    },
+    {
+        "object_category": "bed table",
+        "count": 9
+    },
+    {
+        "object_category": "bathroom counter",
+        "count": 9
+    },
+    {
+        "object_category": "table lamp",
+        "count": 6
+    },
+    {
+        "object_category": "bar chair",
+        "count": 6
+    },
+    {
+        "object_category": "tv stand",
+        "count": 5
+    },
+    {
+        "object_category": "computer desk",
+        "count": 5
+    },
+    {
+        "object_category": "bath cabinet",
+        "count": 5
+    },
+    {
+        "object_category": "refrigerator cabinet",
+        "count": 5
+    },
+    {
+        "object_category": "bath sink",
+        "count": 5
+    },
+    {
+        "object_category": "kitchen island",
+        "count": 4
+    },
+    {
+        "object_category": "railing",
+        "count": 4
+    },
+    {
+        "object_category": "folding chair",
+        "count": 4
+    },
+    {
+        "object_category": "electric box",
+        "count": 3
+    },
+    {
+        "object_category": "bookshelf",
+        "count": 3
+    },
+    {
+        "object_category": "ironing board",
+        "count": 3
+    },
+    {
+        "object_category": "computer chair",
+        "count": 3
+    },
+    {
+        "object_category": "throw blanket",
+        "count": 2
+    },
+    {
+        "object_category": "lamp table",
+        "count": 2
+    },
+    {
+        "object_category": "bed sheet",
+        "count": 2
+    },
+    {
+        "object_category": "backpack",
+        "count": 2
+    },
+    {
+        "object_category": "appliance",
+        "count": 2
+    },
+    {
+        "object_category": "furnace",
+        "count": 2
+    },
+    {
+        "object_category": "file cabinet",
+        "count": 1
+    },
+    {
+        "object_category": "exercise equipment",
+        "count": 1
+    },
+    {
+        "object_category": "shower tub",
+        "count": 1
+    },
+    {
+        "object_category": "dining table",
+        "count": 1
+    },
+    {
+        "object_category": "water heater",
+        "count": 1
+    },
+    {
+        "object_category": "bedside lamp",
+        "count": 1
+    },
+    {
+        "object_category": "clothes rack",
+        "count": 1
+    },
+    {
+        "object_category": "bicycle",
+        "count": 1
+    },
+    {
+        "object_category": "computer",
+        "count": 1
+    },
+    {
+        "object_category": "chest drawer",
+        "count": 1
+    },
+    {
+        "object_category": "picture",
+        "count": 341
+    },
+    {
+        "object_category": "mirror",
+        "count": 128
+    },
+    {
+        "object_category": "pillow",
+        "count": 127
+    },
+    {
+        "object_category": "refrigerator",
+        "count": 34
+    },
+    {
+        "object_category": "stair",
+        "count": 33
+    },
+    {
+        "object_category": "rug",
+        "count": 33
+    },
+    {
+        "object_category": "book",
+        "count": 31
+    },
+    {
+        "object_category": "plant",
+        "count": 30
+    },
+    {
+        "object_category": "dishwasher",
+        "count": 21
+    },
+    {
+        "object_category": "dresser",
+        "count": 20
+    },
+    {
+        "object_category": "microwave",
+        "count": 20
+    },
+    {
+        "object_category": "radiator",
+        "count": 19
+    },
+    {
+        "object_category": "nightstand",
+        "count": 18
+    },
+    {
+        "object_category": "window glass",
+        "count": 15
+    },
+    {
+        "object_category": "flower vase",
+        "count": 13
+    },
+    {
+        "object_category": "decorative plant",
+        "count": 13
+    },
+    {
+        "object_category": "vase",
+        "count": 12
+    },
+    {
+        "object_category": "hanging clothes",
+        "count": 11
+    },
+    {
+        "object_category": "flowerpot",
+        "count": 9
+    },
+    {
+        "object_category": "carpet",
+        "count": 8
+    },
+    {
+        "object_category": "hanger",
+        "count": 6
+    },
+    {
+        "object_category": "parapet",
+        "count": 6
+    },
+    {
+        "object_category": "calendar",
+        "count": 5
+    },
+    {
+        "object_category": "handrail",
+        "count": 5
+    },
+    {
+        "object_category": "photo",
+        "count": 4
+    },
+    {
+        "object_category": "photo mount",
+        "count": 4
+    },
+    {
+        "object_category": "statue",
+        "count": 4
+    },
+    {
+        "object_category": "glass",
+        "count": 4
+    },
+    {
+        "object_category": "piano",
+        "count": 4
+    },
+    {
+        "object_category": "freezer",
+        "count": 3
+    },
+    {
+        "object_category": "exercise bike",
+        "count": 3
+    },
+    {
+        "object_category": "clothes hanger rod",
+        "count": 2
+    },
+    {
+        "object_category": "ottoman",
+        "count": 2
+    },
+    {
+        "object_category": "shower glass",
+        "count": 2
+    },
+    {
+        "object_category": "christmas tree",
+        "count": 2
+    },
+    {
+        "object_category": "island",
+        "count": 1
+    },
+    {
+        "object_category": "food",
+        "count": 1
+    },
+    {
+        "object_category": "boiler",
+        "count": 1
+    },
+    {
+        "object_category": "guitar",
+        "count": 1
+    },
+    {
+        "object_category": "footstool",
+        "count": 1
+    },
+    {
+        "object_category": "printer",
+        "count": 1
+    },
+    {
+        "object_category": "speaker",
+        "count": 1
+    },
+    {
+        "object_category": "shower dial",
+        "count": 1
+    },
+    {
+        "object_category": "footrest",
+        "count": 1
+    },
+    {
+        "object_category": "coffee machine",
+        "count": 1
+    }
+]

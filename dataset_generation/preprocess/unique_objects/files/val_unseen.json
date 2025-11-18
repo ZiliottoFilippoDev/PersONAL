@@ -1,0 +1,182 @@
+[
+    {
+        "object_category": "picture",
+        "count": 341
+    },
+    {
+        "object_category": "mirror",
+        "count": 128
+    },
+    {
+        "object_category": "pillow",
+        "count": 127
+    },
+    {
+        "object_category": "refrigerator",
+        "count": 34
+    },
+    {
+        "object_category": "stair",
+        "count": 33
+    },
+    {
+        "object_category": "rug",
+        "count": 33
+    },
+    {
+        "object_category": "book",
+        "count": 31
+    },
+    {
+        "object_category": "plant",
+        "count": 30
+    },
+    {
+        "object_category": "dishwasher",
+        "count": 21
+    },
+    {
+        "object_category": "dresser",
+        "count": 20
+    },
+    {
+        "object_category": "microwave",
+        "count": 20
+    },
+    {
+        "object_category": "radiator",
+        "count": 19
+    },
+    {
+        "object_category": "nightstand",
+        "count": 18
+    },
+    {
+        "object_category": "window glass",
+        "count": 15
+    },
+    {
+        "object_category": "flower vase",
+        "count": 13
+    },
+    {
+        "object_category": "decorative plant",
+        "count": 13
+    },
+    {
+        "object_category": "vase",
+        "count": 12
+    },
+    {
+        "object_category": "hanging clothes",
+        "count": 11
+    },
+    {
+        "object_category": "flowerpot",
+        "count": 9
+    },
+    {
+        "object_category": "carpet",
+        "count": 8
+    },
+    {
+        "object_category": "hanger",
+        "count": 6
+    },
+    {
+        "object_category": "parapet",
+        "count": 6
+    },
+    {
+        "object_category": "calendar",
+        "count": 5
+    },
+    {
+        "object_category": "handrail",
+        "count": 5
+    },
+    {
+        "object_category": "photo",
+        "count": 4
+    },
+    {
+        "object_category": "photo mount",
+        "count": 4
+    },
+    {
+        "object_category": "statue",
+        "count": 4
+    },
+    {
+        "object_category": "glass",
+        "count": 4
+    },
+    {
+        "object_category": "piano",
+        "count": 4
+    },
+    {
+        "object_category": "freezer",
+        "count": 3
+    },
+    {
+        "object_category": "exercise bike",
+        "count": 3
+    },
+    {
+        "object_category": "clothes hanger rod",
+        "count": 2
+    },
+    {
+        "object_category": "ottoman",
+        "count": 2
+    },
+    {
+        "object_category": "shower glass",
+        "count": 2
+    },
+    {
+        "object_category": "christmas tree",
+        "count": 2
+    },
+    {
+        "object_category": "island",
+        "count": 1
+    },
+    {
+        "object_category": "food",
+        "count": 1
+    },
+    {
+        "object_category": "boiler",
+        "count": 1
+    },
+    {
+        "object_category": "guitar",
+        "count": 1
+    },
+    {
+        "object_category": "footstool",
+        "count": 1
+    },
+    {
+        "object_category": "printer",
+        "count": 1
+    },
+    {
+        "object_category": "speaker",
+        "count": 1
+    },
+    {
+        "object_category": "shower dial",
+        "count": 1
+    },
+    {
+        "object_category": "footrest",
+        "count": 1
+    },
+    {
+        "object_category": "coffee machine",
+        "count": 1
+    }
+]

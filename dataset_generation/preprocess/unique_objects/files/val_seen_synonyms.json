@@ -1,0 +1,178 @@
+[
+    {
+        "object_category": "kitchen cabinet",
+        "count": 146
+    },
+    {
+        "object_category": "shelf",
+        "count": 96
+    },
+    {
+        "object_category": "armchair",
+        "count": 62
+    },
+    {
+        "object_category": "dining chair",
+        "count": 52
+    },
+    {
+        "object_category": "lamp",
+        "count": 35
+    },
+    {
+        "object_category": "fireplace",
+        "count": 21
+    },
+    {
+        "object_category": "cushion",
+        "count": 13
+    },
+    {
+        "object_category": "chest of drawers",
+        "count": 13
+    },
+    {
+        "object_category": "stairs railing",
+        "count": 10
+    },
+    {
+        "object_category": "kitchen counter",
+        "count": 10
+    },
+    {
+        "object_category": "coffee table",
+        "count": 9
+    },
+    {
+        "object_category": "desk chair",
+        "count": 9
+    },
+    {
+        "object_category": "bed table",
+        "count": 9
+    },
+    {
+        "object_category": "bathroom counter",
+        "count": 9
+    },
+    {
+        "object_category": "table lamp",
+        "count": 6
+    },
+    {
+        "object_category": "bar chair",
+        "count": 6
+    },
+    {
+        "object_category": "tv stand",
+        "count": 5
+    },
+    {
+        "object_category": "computer desk",
+        "count": 5
+    },
+    {
+        "object_category": "bath cabinet",
+        "count": 5
+    },
+    {
+        "object_category": "refrigerator cabinet",
+        "count": 5
+    },
+    {
+        "object_category": "bath sink",
+        "count": 5
+    },
+    {
+        "object_category": "kitchen island",
+        "count": 4
+    },
+    {
+        "object_category": "railing",
+        "count": 4
+    },
+    {
+        "object_category": "folding chair",
+        "count": 4
+    },
+    {
+        "object_category": "electric box",
+        "count": 3
+    },
+    {
+        "object_category": "bookshelf",
+        "count": 3
+    },
+    {
+        "object_category": "ironing board",
+        "count": 3
+    },
+    {
+        "object_category": "computer chair",
+        "count": 3
+    },
+    {
+        "object_category": "throw blanket",
+        "count": 2
+    },
+    {
+        "object_category": "lamp table",
+        "count": 2
+    },
+    {
+        "object_category": "bed sheet",
+        "count": 2
+    },
+    {
+        "object_category": "backpack",
+        "count": 2
+    },
+    {
+        "object_category": "appliance",
+        "count": 2
+    },
+    {
+        "object_category": "furnace",
+        "count": 2
+    },
+    {
+        "object_category": "file cabinet",
+        "count": 1
+    },
+    {
+        "object_category": "exercise equipment",
+        "count": 1
+    },
+    {
+        "object_category": "shower tub",
+        "count": 1
+    },
+    {
+        "object_category": "dining table",
+        "count": 1
+    },
+    {
+        "object_category": "water heater",
+        "count": 1
+    },
+    {
+        "object_category": "bedside lamp",
+        "count": 1
+    },
+    {
+        "object_category": "clothes rack",
+        "count": 1
+    },
+    {
+        "object_category": "bicycle",
+        "count": 1
+    },
+    {
+        "object_category": "computer",
+        "count": 1
+    },
+    {
+        "object_category": "chest drawer",
+        "count": 1
+    }
+]
