@@ -131,7 +131,7 @@ class PersonalizedObjectNavDatasetV1(PointNavDatasetV1):
 
         for i, episode in enumerate(deserialized["episodes"]):
             episode = ObjectGoalNavEpisode(**episode)
-            episode.episode_id = str(i)
+            # episode.episode_id = str(i)
             
             if isinstance(episode.object_id, list):
                 print("a")

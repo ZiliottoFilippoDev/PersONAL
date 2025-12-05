@@ -16,7 +16,7 @@ defaults:
     - traveled_stairs
   - /habitat_baselines/rl/policy: vlfm_policy
   - _self_
-
+  
 habitat:
   environment:
     max_episode_steps: 50              #Max number of steps in an episode
