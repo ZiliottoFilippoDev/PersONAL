@@ -18,6 +18,9 @@ class EvalConf:
     use_pointnav: bool
     square_im: bool
 
+    results_dir: str
+    run_split: int
+
 
 def load_eval_config():
     return SpockBuilder(EvalConf, HabitatControllerConf, PlanningConf, MappingConf,

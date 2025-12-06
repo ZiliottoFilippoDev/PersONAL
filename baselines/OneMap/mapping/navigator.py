@@ -584,7 +584,7 @@ class Navigator:
                                                self.percentile_exploitation)
                         top_map = (adjusted_score > top_10).astype(np.uint8)
 
-                        print(top_10)
+                        # print(top_10)
                         top_map[self.one_map.confidence_map == 0] = 0
                         k = np.ones((7, 7), np.uint8)
                         top_map = cv2.dilate(top_map, k, iterations=1)

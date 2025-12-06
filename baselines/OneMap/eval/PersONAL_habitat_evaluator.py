@@ -55,6 +55,8 @@ import pickle
 # scipy
 from scipy.spatial.transform import Rotation as R
 
+from tqdm import tqdm
+
 class Result(enum.Enum):
     SUCCESS = 1
     FAILURE_MISDETECT = 2
@@ -111,7 +113,13 @@ class HabitatEvaluator:
         mode = self.object_nav_path.split("/")[-2]
         print(f"PersONAL Dataset Mode : {mode}")
 
-        self.results_path = f"./results/PersONAL/{mode}"
+        # self.results_path = f"./results/PersONAL/{mode}"
+        self.results_path = f"{config.results_dir}/{mode}"
+
+        if self.config.run_split in [1, 2]:
+            self.results_path = self.results_path + f"/split_{config.run_split}"
+
+        print(f"Results path : {self.results_path}")
 
     def load_scene(self, scene_id: str):
         if self.sim is not None:
@@ -312,6 +320,20 @@ class HabitatEvaluator:
             print(f"Loaded Saved Results: {results}")
             
 
+        #Added: Train in multiple terminals for different episodes
+        assert self.config.run_split in [0, 1, 2]
+        mid_num = len(self.episodes)//2
+
+        if self.config.run_split == 1:
+            self.exclude_ids = np.arange(mid_num, len(self.episodes))
+            print(f"Loading split 1 episodes (0 -> {mid_num})...")
+            assert "split_1" in self.results_path
+
+        elif self.config.run_split == 2:
+            self.exclude_ids = np.arange(0, mid_num)
+            print(f"Loading split 2 episodes ({mid_num} -> {len(self.episodes)})...")
+            assert "split_2" in self.results_path
+
 
         for n_ep, episode in enumerate(self.episodes):
             
@@ -362,6 +384,7 @@ class HabitatEvaluator:
                 pts = np.array(pts)
                 rr.log("map/ground_truth", rr.Points2D(pts, colors=[[255, 255, 0]], radii=[1]))
 
+            pbar = tqdm(total = self.max_steps)
             while steps < self.max_steps and current_obj_id < len(episode.obj_sequence):
                 observations = self.sim.get_sensor_observations()
                 # observations['depth'] = fill_depth_holes(observations['depth'])
@@ -443,6 +466,7 @@ class HabitatEvaluator:
                                             obj_locs, self.is_gibson)
                     print(f"Step {steps}, current object: {current_obj}, episode_id: {episode.episode_id}, distance to closest object: {dist}")
                 steps += 1
+                pbar.update()
 
             poses = np.array(poses)
             # If the last 10 poses didn't change much and we have OOT, assume stuck
@@ -465,7 +489,7 @@ class HabitatEvaluator:
             save_path = f"{self.results_path}/similarities/final_sim_{episode.episode_id}.png"
             os.makedirs(os.path.dirname(save_path), exist_ok = True)
             cv2.imwrite(save_path, final_sim)
-            print(f"Saved Image to {save_path}")
+            print(f"Saved Image to {save_path}\n")
 
             if (results[n_ep] == Result.FAILURE_STUCK or results[n_ep] == Result.FAILURE_OOT) and num_frontiers == 0:
                 results[n_ep] = Result.FAILURE_ALL_EXPLORED
@@ -474,6 +498,9 @@ class HabitatEvaluator:
                 print(f"{obj}: {success_per_obj[obj] / obj_count[obj]}")
             print(
                 f"Result distribution: successes: {results.count(Result.SUCCESS)}, misdetects: {results.count(Result.FAILURE_MISDETECT)}, OOT: {results.count(Result.FAILURE_OOT)}, stuck: {results.count(Result.FAILURE_STUCK)}, not reached: {results.count(Result.FAILURE_NOT_REACHED)}, all explored: {results.count(Result.FAILURE_ALL_EXPLORED)}")
+            
             # Write result to file
-            with open(f"{self.results_path}/state/state_{episode.episode_id}.txt", 'w') as f:
+            save_path = f"{self.results_path}/state/state_{episode.episode_id}.txt"
+            os.makedirs(os.path.dirname(save_path), exist_ok=True)
+            with open(save_path, 'w') as f:
                 f.write(str(results[n_ep].value))

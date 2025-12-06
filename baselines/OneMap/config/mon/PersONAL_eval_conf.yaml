@@ -5,14 +5,17 @@ EvalConf:
   is_gibson: False
 
   #PersONAL
-  object_nav_path: "habitat-lab/data/datasets/PersONAL/active/val/easy/content/"                            #Mode : Easy
-  # object_nav_path: "habitat-lab/data/datasets/PersONAL/active/val/test_baselines/medium_filt/content/"    #Mode : Medium
-  # object_nav_path: "habitat-lab/data/datasets/PersONAL/active/val/test_baselines/hard/content/"                          #Mode : Hard
+  object_nav_path: "habitat-lab/data/datasets/PersONAL/active_new/val/test_baselines/easy/content/"                            #Mode : Easy
+  # object_nav_path: "habitat-lab/data/datasets/PersONAL/active_new/val/test_baselines/medium_filt/content/"    #Mode : Medium
+  # object_nav_path: "habitat-lab/data/datasets/PersONAL/active_new/val/test_baselines/hard/content/"                          #Mode : Hard
   scene_path: "habitat-lab/data/scene_datasets/"
 
   log_rerun: False
   use_pointnav: False
   square_im: True
+
+  results_dir: "results/trial"
+  run_split: 0                      #Choices: [0, 1, 2]. If 0, loads all the episodes. If 1 or 2, loads half of the episodes as a split.
 
 config: [
   ./controller_habitat.yaml, # Default Habitat Controller
