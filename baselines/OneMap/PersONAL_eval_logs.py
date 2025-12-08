@@ -21,6 +21,7 @@ class Traj_Metrics:
                  scene_name: str,
                  data_content_dir: str,
                  success_thresh = 0.1,      #Distance to nearest viewpoint
+                 dist_mode = "geo",         #Distance measure : "geo" (Geodesic) or "euc" (Euclidean)
                  scene_dataset_cfg = "habitat-lab/data/scene_datasets/hm3d/hm3d_annotated_basis.scene_dataset_config.json",
                  agent_height = 0.88, agent_radius = 0.18,
                  recomp_navmesh = False
@@ -28,6 +29,9 @@ class Traj_Metrics:
         
         self.scene_name = scene_name
         self.success_thresh = success_thresh
+        
+        assert dist_mode in ["geo", "euc"], "Invalid entry. Choose one : [geo, euc]"
+        self.dist_mode = dist_mode
         
         #Load scene episodes
         scene_info_path = os.path.join(data_content_dir, f"{scene_name}.json.gz")
@@ -218,6 +222,7 @@ class Traj_Metrics:
         # obj_view_pts = np.apply_along_axis(obs_to_pose, axis=1, arr=obj_view_pts)
 
         #Only consider x,y coordinates
+        final_pos = final_pos[[0, 2]]
         obj_pos, obj_view_pts = obj_pos[:, [0, 2]], obj_view_pts[:, [0, 2]]
 
         #Calculate distance to goal
@@ -253,9 +258,14 @@ class Traj_Metrics:
         )
 
         #Get distance to object and nearest viewpoint
-        dtg_obj, dtg_vw = self.get_geo_dtg(final_pos = final_pos,
-                                            obj_cat = episode.extra["object_category"],
-                                            obj_name = episode.extra["object_instance"])
+        if self.dist_mode == "geo":
+            dtg_obj, dtg_vw = self.get_geo_dtg(final_pos = final_pos,
+                                                obj_cat = episode.extra["object_category"],
+                                                obj_name = episode.extra["object_instance"])
+        if self.dist_mode == "euc":
+            dtg_obj, dtg_vw = self.get_euc_dtg(final_pos = final_pos,
+                                                obj_cat = episode.extra["object_category"],
+                                                obj_name = episode.extra["object_instance"])
         
         #Calculate metrics
         success, spl = 0, 0
@@ -326,6 +336,7 @@ def get_metrics(args):
         evaluator = Traj_Metrics(scene_name = scene,
                                     data_content_dir = args.data_content_dir,
                                     success_thresh = args.success_thresh,
+                                    dist_mode = args.dist_mode,
                                     recomp_navmesh = args.recomp_navmesh,
                                     agent_height = args.agent_height,
                                     agent_radius = args.agent_radius)
@@ -415,6 +426,7 @@ if __name__ == "__main__":
     parser.add_argument("--log_dir", type=str)
     parser.add_argument("--data_content_dir", type=str)
     parser.add_argument("--success_thresh", type=float, default=0.1)
+    parser.add_argument("--dist_mode", default="geo", type=str)
     parser.add_argument("--recomp_navmesh", action="store_true")
     parser.add_argument("--agent_height", type=float, default=0.88)
     parser.add_argument("--agent_radius", type=float, default=0.18)
