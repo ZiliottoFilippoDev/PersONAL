@@ -326,7 +326,8 @@ class VLFMTrainer(PPOTrainer):
                     ]
                     == evals_per_ep
                 ):
-                    envs_to_pause.append(i)
+                    # envs_to_pause.append(i)
+                    pass                        #PersONAL : Changed
                 elif int(next_episodes_info[i].episode_id) == 123123123:
                     envs_to_pause.append(i)
 
@@ -409,8 +410,16 @@ class VLFMTrainer(PPOTrainer):
                 batch,
                 rgb_frames,
             )
-
+            
+            # print("\n\n -------- Not Done : ", not_done_masks, " --------- \n\n")
         pbar.close()
+
+        print(f"\n\n\n ----- \n\n\n")
+        print(len(stats_episodes))
+        print(number_of_eval_episodes)
+        print(evals_per_ep)
+        print(self.envs.num_envs)
+        print(f"\n\n\n ----- \n\n\n")
 
         if "ZSOS_DONE_PATH" in os.environ:
             # Create an empty file at ZSOS_DONE_PATH to signal that the

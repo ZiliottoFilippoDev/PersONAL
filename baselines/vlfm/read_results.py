@@ -166,10 +166,12 @@ if __name__ == "__main__":
     assert os.path.exists(args.log_dir) and os.path.isdir(args.log_dir), "Invalid Log Dir."
     assert args.PersONAL_data_type in ["easy", "medium", "hard"], "PersONAL data type should be one of the following : easy, medium, hard"
 
-    if args.PersONAL_data_type == "easy":
-        data_content_dir = f"habitat-lab/data/datasets/PersONAL/active/val/{args.PersONAL_data_type}/content"
-    else:
-        data_content_dir = f"habitat-lab/data/datasets/PersONAL/active/val/test_baselines/{args.PersONAL_data_type + '_filt'}/content"
+    # if args.PersONAL_data_type == "easy":
+    #     data_content_dir = f"habitat-lab/data/datasets/PersONAL/active/val/{args.PersONAL_data_type}/content"
+    # else:
+    #     data_content_dir = f"habitat-lab/data/datasets/PersONAL/active/val/test_baselines/{args.PersONAL_data_type + '_filt'}/content"
+
+    data_content_dir = f"habitat-lab/data/datasets/PersONAL/active_new/val/test_baselines/{args.PersONAL_data_type}/content"
 
     traj_dir = os.path.join(args.log_dir, "trajectory")
 
