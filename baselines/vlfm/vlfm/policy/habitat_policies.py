@@ -33,6 +33,12 @@ try:
 except:
     print(f"Could not import PersONAL task. This is fine if you are not using this task.")
 
+try:
+    from vlfm.vlm.owlv2 import Owlv2_Detector_t
+    from vlfm.vlm.coco_classes import COCO_CLASSES
+except:
+    print(f"Could not import Owlv2 Detector. This is fine if GroundingDino is being used.")
+
 
 HM3D_ID_TO_NAME = ["chair", "bed", "potted plant", "toilet", "tv", "couch"]
 MP3D_ID_TO_NAME = [
@@ -308,6 +314,59 @@ class HabitatITMPolicyV2(HabitatMixin, ITMPolicyV2):
 @baseline_registry.register_policy
 class HabitatITMPolicyV3(HabitatMixin, ITMPolicyV3):
     pass
+
+#VLFM Standard with Owlv2 Detector
+@baseline_registry.register_policy
+class HabitatITMPolicy_owlv2(HabitatMixin, ITMPolicyV2):
+    "Standard VLFM : Replacing GroundingDino with OwLViT Detector"
+    
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
+        super().__init__(*args, **kwargs)
+        self._object_detector = Owlv2_Detector_t(
+                                    detect_thresh = self._non_coco_threshold,
+                                    # model_id = "google/owlv2-base-patch16",   
+                                    model_id = "google/owlv2-base-patch16-ensemble"
+                                    )
+
+    def _reset(self):
+        super()._reset()
+        self._object_detector.query_txt = None
+
+    def _pre_step(self, observations: "TensorDict", masks: Tensor) -> None:
+
+        super()._pre_step(observations, masks)
+
+        if (self._object_detector.query_txt is None):
+
+            #Query Vector is the text embedding vector corresponding to the target
+            print(f"Setting Reference Text Query for Owlv2 Detector...")
+            self._object_detector.set_query(texts = [self._target_object])                                 
+
+            print(f"------Query for OWLv2 Detector is initialized!-----\n\n")
+        
+    def _get_object_detections(self, img: np.ndarray) -> ObjectDetections:
+        target_classes = self._target_object.split("|")
+        has_coco = any(c in COCO_CLASSES for c in target_classes) and self._load_yolo
+        has_non_coco = any(c not in COCO_CLASSES for c in target_classes)
+
+        detections = (
+            self._coco_object_detector.predict(img)
+            if has_coco
+            else self._object_detector.predict(img)
+        )
+
+        if has_coco: 
+            detections.filter_by_class(target_classes)  #For owlv2, don't need to filter by class as we only deal with one class
+
+        det_conf_threshold = self._coco_threshold if has_coco else self._non_coco_threshold
+        detections.filter_by_conf(det_conf_threshold)
+
+        if has_coco and has_non_coco and detections.num_detections == 0:
+            # Retry with non-coco object detector
+            detections = self._object_detector.predict(img, caption=self._non_coco_caption)
+            detections.filter_by_conf(self._non_coco_threshold)
+
+        return detections
 
 
 @dataclass

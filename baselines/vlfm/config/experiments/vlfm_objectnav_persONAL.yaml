@@ -72,6 +72,7 @@ habitat_baselines:
 
     policy:
       name: "HabitatITMPolicyV2"
+      #name: "HabitatITMPolicy_owlv2"
 
     ppo:
       # ppo params
