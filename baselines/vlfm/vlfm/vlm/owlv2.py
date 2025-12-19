@@ -51,8 +51,7 @@ class Owlv2_Detector_t:
         else:
             raise TypeError("texts must be a str or List[str]")
 
-        print(f"Set text query.")
-        print(self.query_txt)
+        # print(f"Set text query.")
 
     @torch.inference_mode()
     def is_query_in_image(self, target_image: torch.Tensor, plot_result: bool=False):
@@ -65,8 +64,9 @@ class Owlv2_Detector_t:
         inputs = self.processor(text=self.query_txt, 
                                 images=target_image, 
                                 return_tensors="pt",
-                                truncation=True,
-                                max_length=self.model.config.text_config.max_position_embeddings).to(self.device)
+                                # truncation=True,
+                                # max_length=self.model.config.text_config.max_position_embeddings
+                                ).to(self.device)
         outputs = self.model(**inputs)
 
         #Target image sizes to resclae box preds

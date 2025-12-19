@@ -154,6 +154,7 @@ class BaseObjectNavPolicy(BasePolicy):
         if not self._did_reset and masks[0] == 0:
             self._reset()
             self._target_object = observations["objectgoal"]
+            self._target_summary = observations["goal_summary"]         #PersONAL : Added summary
         try:
             self._cache_observations(observations)
         except IndexError as e:

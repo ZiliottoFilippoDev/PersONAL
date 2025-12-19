@@ -251,12 +251,20 @@ def get_task_description(id_list, scene_name,
                 if obj_id_num in ep_obj_id_nums:
 
                     obj_arg = ep_obj_id_nums.index(obj_id_num)
-                    return ep["description"][obj_arg][0]
+
+                    summary = min(ep["extracted_summary"], key=len)
+                    summary = summary.split(" owns ", 1)[1]
+
+                    return ep["description"][obj_arg][0], summary
 
             else:
 
                 ep_obj_id_num = int(ep_obj_ids.split("_")[-1])
                 if obj_id_num == ep_obj_id_num:
-                    return ep["description"][0]
+
+                    summary = min(ep["extracted_summary"], key=len)
+                    summary = summary.split(" owns ", 1)[1]
+
+                    return ep["description"][0], summary
 
     return None

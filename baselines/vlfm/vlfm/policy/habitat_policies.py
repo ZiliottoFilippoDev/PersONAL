@@ -168,12 +168,15 @@ class HabitatMixin:
             key = f"{scene_name},{task_id.item()},{str(obj_id_num.item())}"
             
             if key in self.PERS_INFO: 
-                obs_dict[ObjectGoalSensor_Pers.cls_uuid] = self.PERS_INFO[key]
+                obs_dict[ObjectGoalSensor_Pers.cls_uuid] = self.PERS_INFO[key][0]
+                obs_ditc["goal_summary"] = self.PERS_INFO[key][1]
             else:
-                obj_descr = get_task_description(id_list, scene_name, self.PERS_INFO["info_dir"])
+                obj_descr, obj_summary = get_task_description(id_list, scene_name, self.PERS_INFO["info_dir"])
                 obs_dict[ObjectGoalSensor_Pers.cls_uuid] = obj_descr
+                obs_dict["goal_summary"] = obj_summary
 
-                self.PERS_INFO[key] = obj_descr
+                self.PERS_INFO[key] = (obj_descr, obj_summary)
+                self._non_coco_caption = obj_summary
         else:
             raise ValueError(f"Dataset type {self._dataset_type} not recognized")
         parent_cls: BaseObjectNavPolicy = super()  # type: ignore
@@ -340,7 +343,8 @@ class HabitatITMPolicy_owlv2(HabitatMixin, ITMPolicyV2):
 
             #Query Vector is the text embedding vector corresponding to the target
             print(f"Setting Reference Text Query for Owlv2 Detector...")
-            self._object_detector.set_query(texts = [self._target_object])                                 
+            # self._object_detector.set_query(texts = [self._target_object])
+            self._object_detector.set_query(texts = [self._target_summary])                                 
 
             print(f"------Query for OWLv2 Detector is initialized!-----\n\n")
         
