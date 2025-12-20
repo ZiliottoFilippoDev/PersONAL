@@ -169,7 +169,7 @@ class HabitatMixin:
             
             if key in self.PERS_INFO: 
                 obs_dict[ObjectGoalSensor_Pers.cls_uuid] = self.PERS_INFO[key][0]
-                obs_ditc["goal_summary"] = self.PERS_INFO[key][1]
+                obs_dict["goal_summary"] = self.PERS_INFO[key][1]
             else:
                 obj_descr, obj_summary = get_task_description(id_list, scene_name, self.PERS_INFO["info_dir"])
                 obs_dict[ObjectGoalSensor_Pers.cls_uuid] = obj_descr
