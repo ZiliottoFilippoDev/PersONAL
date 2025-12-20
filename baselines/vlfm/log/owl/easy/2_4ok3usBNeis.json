@@ -1,0 +1,20 @@
+{
+    "episode_id": "2",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "did_not_fail",
+    "distance_to_goal": 0.0109258396551013,
+    "success": 1.0,
+    "spl": 0.596994330757131,
+    "soft_spl": 0.594080774164107,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "king size bed located next to the white pillow.",
+    "gps": "[     -2.241    -0.10048]",
+    "yaw": 89.99998884409983,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 41
+}

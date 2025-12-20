@@ -1,0 +1,20 @@
+{
+    "episode_id": "6",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.696523666381836,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.06977178970677528,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the washbasin near the toilet seat and the mirror.",
+    "gps": "[     -4.718     -4.6262]",
+    "yaw": 29.999987174447714,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 215
+}

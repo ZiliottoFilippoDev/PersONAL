@@ -1,0 +1,20 @@
+{
+    "episode_id": "7",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "did_not_fail",
+    "distance_to_goal": 0.06780459731817245,
+    "success": 1.0,
+    "spl": 0.1173606843528332,
+    "soft_spl": 0.11549123778452666,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the table in the middle of two couches. it is front of the tv.",
+    "gps": "[    -4.5364     -2.5914]",
+    "yaw": 90.00002982523485,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 265
+}

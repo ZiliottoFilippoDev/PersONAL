@@ -1,0 +1,20 @@
+{
+    "episode_id": "8",
+    "scene_id": "p53SfW6mjZe",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.983903646469116,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.7247744409877597,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "The white skittles over the black wooden drawers before the living room entrance.",
+    "gps": "[    -4.5644     -1.8083]",
+    "yaw": -119.99997601854754,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 132
+}

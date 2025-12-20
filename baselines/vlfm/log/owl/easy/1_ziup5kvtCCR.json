@@ -1,0 +1,20 @@
+{
+    "episode_id": "1",
+    "scene_id": "ziup5kvtCCR",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 15.418741226196289,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "a toilet seat near the bathtub. there is toilet paper haning next to it.",
+    "gps": "[     7.7364     0.86017]",
+    "yaw": -29.999980344258546,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 473
+}

@@ -1,0 +1,20 @@
+{
+    "episode_id": "14",
+    "scene_id": "wcojb4TFT35",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.8298892974853516,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.03115005766555155,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "wooden table with some wine bottles underneath it.",
+    "gps": "[    -5.5357       2.337]",
+    "yaw": 150.00002466469778,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 370
+}

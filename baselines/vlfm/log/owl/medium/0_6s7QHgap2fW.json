@@ -1,0 +1,20 @@
+{
+    "episode_id": "0",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 0.2551243305206299,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.6415280172262826,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the sink next to the toilet.",
+    "gps": "[    -6.1056     -2.4413]",
+    "yaw": 149.99997002318443,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 131
+}

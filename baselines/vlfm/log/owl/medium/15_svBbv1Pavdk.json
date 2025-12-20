@@ -1,0 +1,20 @@
+{
+    "episode_id": "15",
+    "scene_id": "svBbv1Pavdk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 9.085677146911621,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.2519552015919724,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "stove that is located to the right of the cabinet and below the microwave. the stove is made of stainless steel.",
+    "gps": "[    -2.4541    -0.11865]",
+    "yaw": 150.00003832507613,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 60
+}

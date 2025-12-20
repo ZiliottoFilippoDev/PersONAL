@@ -1,0 +1,20 @@
+{
+    "episode_id": "19",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 7.9131903648376465,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "armchair located near the window in the wooden floor area. it is next to a mirror, and has a bag next to is pillows.",
+    "gps": "[      1.491     -2.0825]",
+    "yaw": 89.999995674289,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 33
+}

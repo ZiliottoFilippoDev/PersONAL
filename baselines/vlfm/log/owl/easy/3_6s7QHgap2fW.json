@@ -1,0 +1,20 @@
+{
+    "episode_id": "3",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 0.13548465073108673,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.5650833607815337,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "a led tv near the two dark couches. it is situated on top of a wood cabinet. there is a light blue cabinet next to it.",
+    "gps": "[    -4.0736      1.7745]",
+    "yaw": -119.99998967892589,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 42
+}

@@ -1,0 +1,20 @@
+{
+    "episode_id": "12",
+    "scene_id": "p53SfW6mjZe",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 0.9451318383216858,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.26949751976542086,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "The light green cabinet containing two sinks.",
+    "gps": "[    -2.7055     -3.4575]",
+    "yaw": 119.99998967892589,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 116
+}

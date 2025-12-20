@@ -1,0 +1,20 @@
+{
+    "episode_id": "16",
+    "scene_id": "wcojb4TFT35",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 1.6559652090072632,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.5973360408636331,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "a wooden table witha black printer on top of it. there is also a pink lamp on top of it.",
+    "gps": "[    -2.6878   -0.009668]",
+    "yaw": -59.9999811790846,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 79
+}

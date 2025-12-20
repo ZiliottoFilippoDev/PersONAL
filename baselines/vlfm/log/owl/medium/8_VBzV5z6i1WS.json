@@ -1,0 +1,20 @@
+{
+    "episode_id": "8",
+    "scene_id": "VBzV5z6i1WS",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.898716926574707,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.2237479721561051,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "black leather chair located near the desk. it is also next to the pink bed",
+    "gps": "[    -10.691     -2.3792]",
+    "yaw": 179.9999640278213,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 268
+}

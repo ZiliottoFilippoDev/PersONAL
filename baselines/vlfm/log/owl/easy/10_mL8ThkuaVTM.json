@@ -1,0 +1,20 @@
+{
+    "episode_id": "10",
+    "scene_id": "mL8ThkuaVTM",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.478755474090576,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.10767019361610648,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "terry cloth bathrobe in the bathroom. it is located near the toilet paper. the shower curtain is on the left side of the bathrobe, and the toilet is on the right side.",
+    "gps": "[     1.2833      1.3852]",
+    "yaw": -30.00000424992064,
+    "target_detected": true,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 165
+}

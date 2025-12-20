@@ -1,0 +1,20 @@
+{
+    "episode_id": "12",
+    "scene_id": "wcojb4TFT35",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 7.646904945373535,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the bathroom cabinet, next to the mirror and above the toilet seat.",
+    "gps": "[     2.2405      3.7237]",
+    "yaw": -89.99993420258647,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 460
+}

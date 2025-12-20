@@ -1,0 +1,20 @@
+{
+    "episode_id": "5",
+    "scene_id": "qyAac8rV8Zk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 8.829219818115234,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "brown leather couch located near thecofee table, there are three pillows on the couch.",
+    "gps": "[      4.588     -3.1417]",
+    "yaw": 60.00004265078713,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 288
+}

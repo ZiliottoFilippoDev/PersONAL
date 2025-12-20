@@ -1,0 +1,20 @@
+{
+    "episode_id": "14",
+    "scene_id": "TEEsavR23oF",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 1.3564388751983643,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": 0.22005391120910645,
+    "traveled_stairs": 0,
+    "target_object": "brown leather couch. it is perpendicular to the other leather couch and has a blanket on top.",
+    "gps": "[      1.172     -1.3766]",
+    "yaw": -120.00005798081759,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

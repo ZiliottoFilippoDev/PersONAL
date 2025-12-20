@@ -1,0 +1,20 @@
+{
+    "episode_id": "0",
+    "scene_id": "wcojb4TFT35",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.0053963661193848,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.07896931689494345,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "sink cabinet, which is located below the mirror and next to the bathroom cabinet.",
+    "gps": "[    -4.2065      1.2166]",
+    "yaw": -149.99998368356276,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 119
+}

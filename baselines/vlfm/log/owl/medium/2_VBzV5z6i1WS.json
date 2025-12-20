@@ -1,0 +1,20 @@
+{
+    "episode_id": "2",
+    "scene_id": "VBzV5z6i1WS",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 15.747767448425293,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "blanket that is pink and white. there are floreal patterns as drawings. it positioned above the bed.",
+    "gps": "[    0.61603     -6.0311]",
+    "yaw": 120.00001699968256,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 86
+}

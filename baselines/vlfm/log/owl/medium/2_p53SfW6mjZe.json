@@ -1,0 +1,20 @@
+{
+    "episode_id": "2",
+    "scene_id": "p53SfW6mjZe",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 3.4174413681030273,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.14936137118727305,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "The dark-brown shelf near the ping pong table. it has some cue sticks attached to it.",
+    "gps": "[    -8.2721     -2.1316]",
+    "yaw": 60.000001669652114,
+    "target_detected": true,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

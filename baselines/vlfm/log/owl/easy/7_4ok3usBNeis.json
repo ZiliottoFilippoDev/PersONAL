@@ -1,0 +1,20 @@
+{
+    "episode_id": "7",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.227527141571045,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "gas-fired water heater. look for it near the washbasin and laundry machine.",
+    "gps": "[    0.77174     -1.5964]",
+    "yaw": -29.99998375935313,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 191
+}

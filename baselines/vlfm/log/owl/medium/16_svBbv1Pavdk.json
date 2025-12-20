@@ -1,0 +1,20 @@
+{
+    "episode_id": "16",
+    "scene_id": "svBbv1Pavdk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 12.013015747070312,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "a nice chair in the bedroom. it is of a gray color and near the bed and the window.",
+    "gps": "[    -1.0251     -1.9695]",
+    "yaw": -29.9999905895423,
+    "target_detected": true,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 235
+}

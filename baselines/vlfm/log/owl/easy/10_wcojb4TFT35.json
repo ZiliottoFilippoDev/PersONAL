@@ -1,0 +1,20 @@
+{
+    "episode_id": "10",
+    "scene_id": "wcojb4TFT35",
+    "failure_cause": "did_not_fail",
+    "distance_to_goal": 0.06955231726169586,
+    "success": 1.0,
+    "spl": 0.6903003529152778,
+    "soft_spl": 0.6561171199088411,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "stainless steel sink located near the fridge. it is also next to the kitchen window.",
+    "gps": "[    -1.4665    -0.99103]",
+    "yaw": 120.00000333930423,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 29
+}

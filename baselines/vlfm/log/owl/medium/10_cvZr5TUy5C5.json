@@ -1,0 +1,20 @@
+{
+    "episode_id": "10",
+    "scene_id": "cvZr5TUy5C5",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 18.15867042541504,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 1,
+    "target_object": "haning clothes on the closet. the clothes are from various colors, many of the are purple.",
+    "gps": "[     2.5764     -7.1103]",
+    "yaw": -2.16895305725347e-05,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 365
+}

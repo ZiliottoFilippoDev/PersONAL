@@ -1,0 +1,20 @@
+{
+    "episode_id": "11",
+    "scene_id": "qyAac8rV8Zk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 0.5770280957221985,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the sink over the kitchen island made of granite.",
+    "gps": "[    0.15849    -0.52452]",
+    "yaw": 150.00005198545446,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

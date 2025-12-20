@@ -1,0 +1,20 @@
+{
+    "episode_id": "6",
+    "scene_id": "bCPU9suPUw9",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.1685447692871094,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.2170429588677808,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the brown leather chair. it is located near the beds and the entrance of the room.",
+    "gps": "[   -0.59151    -0.34151]",
+    "yaw": -59.99996751870626,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 38
+}

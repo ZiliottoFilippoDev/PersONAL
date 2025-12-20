@@ -1,0 +1,20 @@
+{
+    "episode_id": "6",
+    "scene_id": "VBzV5z6i1WS",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 6.341371536254883,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "kitchen cabinet that is located near the refrigerator. the kitchen cabinet is white in color.",
+    "gps": "[      -5.64     -6.7068]",
+    "yaw": -120.00001699968256,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

@@ -1,0 +1,20 @@
+{
+    "episode_id": "20",
+    "scene_id": "cvZr5TUy5C5",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 0.930694043636322,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.10422515630785019,
+    "distance_to_goal_reward": 0.24966317415237427,
+    "traveled_stairs": 0,
+    "target_object": "the dark towel over the toilet seat. it is also next to the sink.",
+    "gps": "[    -7.1514     0.82306]",
+    "yaw": -150.00006564583282,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

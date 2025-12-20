@@ -1,0 +1,20 @@
+{
+    "episode_id": "3",
+    "scene_id": "ziup5kvtCCR",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 10.693005561828613,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.16953086853027344,
+    "traveled_stairs": 0,
+    "target_object": "wooden dining table. ii has 6 chairs around it, and a nice green plant.",
+    "gps": "[     2.3869     -7.0826]",
+    "yaw": -29.99998375935313,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

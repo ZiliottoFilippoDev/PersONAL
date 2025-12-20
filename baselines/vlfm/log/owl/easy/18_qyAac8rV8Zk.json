@@ -1,0 +1,20 @@
+{
+    "episode_id": "18",
+    "scene_id": "qyAac8rV8Zk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": Infinity,
+    "success": 0.0,
+    "spl": NaN,
+    "soft_spl": NaN,
+    "distance_to_goal_reward": NaN,
+    "traveled_stairs": 0,
+    "target_object": "front-loading washing machine near the food and washing powder.",
+    "gps": "[         -0           0]",
+    "yaw": -6.586633080947754e-07,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 1
+}

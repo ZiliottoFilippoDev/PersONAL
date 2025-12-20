@@ -1,0 +1,20 @@
+{
+    "episode_id": "4",
+    "scene_id": "svBbv1Pavdk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 1.4500545263290405,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.2998500444005384,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the blue chair in the living room. it is located in between the couch and the tv.",
+    "gps": "[    -3.0704      2.1408]",
+    "yaw": 149.99999734394112,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 136
+}

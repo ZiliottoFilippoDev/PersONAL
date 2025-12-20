@@ -1,0 +1,20 @@
+{
+    "episode_id": "14",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 3.881309986114502,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 1,
+    "target_object": "a wooden dining chair next to the wooden table.",
+    "gps": "[    -3.3092     -2.2449]",
+    "yaw": -179.999991348578,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 412
+}

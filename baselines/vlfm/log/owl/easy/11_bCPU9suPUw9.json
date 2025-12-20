@@ -1,0 +1,20 @@
+{
+    "episode_id": "11",
+    "scene_id": "bCPU9suPUw9",
+    "failure_cause": "Unkown",
+    "distance_to_goal": Infinity,
+    "success": 0.0,
+    "spl": NaN,
+    "soft_spl": NaN,
+    "distance_to_goal_reward": NaN,
+    "traveled_stairs": 0,
+    "target_object": "The grey chair in the corner of the room next to the king sized bed.",
+    "gps": "[         -0           0]",
+    "yaw": -4.89863688707146e-07,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 1
+}

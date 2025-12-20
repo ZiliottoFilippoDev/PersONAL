@@ -1,0 +1,20 @@
+{
+    "episode_id": "18",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 7.158421516418457,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.3475028003970192,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the wardrobe next to the kids drawings on the wall. the wardrobe is made of a greyish wood and many toys and teddy bears on top of it.",
+    "gps": "[    -4.2702    -0.40095]",
+    "yaw": 120.00000333930423,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 80
+}

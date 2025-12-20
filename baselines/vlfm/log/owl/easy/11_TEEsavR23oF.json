@@ -1,0 +1,20 @@
+{
+    "episode_id": "11",
+    "scene_id": "TEEsavR23oF",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 4.985522747039795,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "It is a stainless steel oven with stoves on top of it. near the wooden kitchen cabinets.",
+    "gps": "[    0.84151     0.77452]",
+    "yaw": -60.000001669652114,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 20
+}

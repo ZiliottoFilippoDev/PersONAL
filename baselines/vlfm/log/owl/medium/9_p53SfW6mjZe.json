@@ -1,0 +1,20 @@
+{
+    "episode_id": "9",
+    "scene_id": "p53SfW6mjZe",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 18.37735366821289,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": 0.15478897094726562,
+    "traveled_stairs": 0,
+    "target_object": "The board next to the grey curtains.",
+    "gps": "[     -4.346     0.75058]",
+    "yaw": -30.000089627285266,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

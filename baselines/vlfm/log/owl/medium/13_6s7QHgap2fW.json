@@ -1,0 +1,20 @@
+{
+    "episode_id": "13",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 3.0706143379211426,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.015618625160401719,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the blue sofa in front of the tv. there are three picutres on top of it.",
+    "gps": "[    0.25391     0.36234]",
+    "yaw": -119.99998967892589,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 183
+}

@@ -1,0 +1,20 @@
+{
+    "episode_id": "11",
+    "scene_id": "p53SfW6mjZe",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 10.127023696899414,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the cabinet under the sink and next to the bathtub.",
+    "gps": "[    -2.8865      4.1758]",
+    "yaw": -29.999973514069374,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 196
+}

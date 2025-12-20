@@ -1,0 +1,20 @@
+{
+    "episode_id": "15",
+    "scene_id": "wcojb4TFT35",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 12.01197624206543,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the wooden bench near the stairs that go on the upper floor. there is a mirror on top of it.",
+    "gps": "[     1.8344     -7.4588]",
+    "yaw": 60.000001669652114,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 472
+}

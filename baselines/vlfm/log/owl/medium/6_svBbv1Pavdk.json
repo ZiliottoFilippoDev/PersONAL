@@ -1,0 +1,20 @@
+{
+    "episode_id": "6",
+    "scene_id": "svBbv1Pavdk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 1.3525090217590332,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.30648058323450367,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "tv that is located in front of the couch. next to the tv there is a green plant as well as the two blue chairs.",
+    "gps": "[    -3.8209      3.7004]",
+    "yaw": -179.999991348578,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 187
+}

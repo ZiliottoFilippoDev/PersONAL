@@ -1,0 +1,20 @@
+{
+    "episode_id": "5",
+    "scene_id": "wcojb4TFT35",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 7.76101541519165,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "white table with blue walls. the table is located under a painting, depicting many bootles and a white chair.",
+    "gps": "[      1.808     -2.6316]",
+    "yaw": 60.000001669652114,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 28
+}

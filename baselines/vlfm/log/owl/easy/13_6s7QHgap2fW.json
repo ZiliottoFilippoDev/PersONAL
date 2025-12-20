@@ -1,0 +1,20 @@
+{
+    "episode_id": "13",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 7.182163238525391,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the white drawers with two yellow pillows on top of it. there is also a blanket with black and white stripes. it is located near the the book rack.",
+    "gps": "[    -7.6016     -1.6552]",
+    "yaw": 3.4212724944196503e-06,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 166
+}

@@ -1,0 +1,20 @@
+{
+    "episode_id": "1",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 3.450505495071411,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.32748904530773293,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "The wooden bench before the window. it is located next to the red rug in the middle of the room.",
+    "gps": "[    -7.0629      1.2244]",
+    "yaw": -120.00000333930423,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 160
+}

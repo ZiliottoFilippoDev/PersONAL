@@ -1,0 +1,20 @@
+{
+    "episode_id": "13",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 9.64300537109375,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.007514439829907623,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "white cloth located near the dresser and the curtain. it is near the bed on the corner of the room.",
+    "gps": "[    -1.6453      4.0155]",
+    "yaw": -90.00003665542401,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 168
+}

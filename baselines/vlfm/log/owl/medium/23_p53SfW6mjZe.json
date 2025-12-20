@@ -1,0 +1,20 @@
+{
+    "episode_id": "23",
+    "scene_id": "p53SfW6mjZe",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 8.827460289001465,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "The bathtub next to the sink",
+    "gps": "[     1.3905      3.5736]",
+    "yaw": -30.000000834826057,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 47
+}

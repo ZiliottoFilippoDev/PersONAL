@@ -1,0 +1,20 @@
+{
+    "episode_id": "4",
+    "scene_id": "bCPU9suPUw9",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 6.536172389984131,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "one of the wooden chair near the dark-brown table used for dining.",
+    "gps": "[    -2.0422     -7.4347]",
+    "yaw": -149.99999734394112,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 118
+}

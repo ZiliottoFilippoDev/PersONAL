@@ -1,0 +1,20 @@
+{
+    "episode_id": "21",
+    "scene_id": "svBbv1Pavdk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 8.281388282775879,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.04059548715536995,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "it is a nice grey couch with two pillows. Beside the is a big green plant. there is a picture frame.",
+    "gps": "[    -1.5441     -0.3063]",
+    "yaw": 3.0191433124898648e-05,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 313
+}

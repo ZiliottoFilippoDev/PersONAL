@@ -1,0 +1,20 @@
+{
+    "episode_id": "6",
+    "scene_id": "ziup5kvtCCR",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 7.752853870391846,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.2496490478515625,
+    "traveled_stairs": 0,
+    "target_object": "tv that is mounted on the wall. it is next to a mirror and above the cabinet. near the bed.",
+    "gps": "[     3.6043      3.4343]",
+    "yaw": -119.9999623581692,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

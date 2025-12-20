@@ -1,0 +1,20 @@
+{
+    "episode_id": "12",
+    "scene_id": "qyAac8rV8Zk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 0.10349048674106598,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.35076277919591486,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "one of the chairs of the dining table. it is entirely made out of wood. in total there are 5 wooden chairs.",
+    "gps": "[    -2.0224     0.60438]",
+    "yaw": -59.99996068851709,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

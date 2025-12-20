@@ -1,0 +1,20 @@
+{
+    "episode_id": "11",
+    "scene_id": "ziup5kvtCCR",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 3.1827709674835205,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.02443949738743689,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the bed with three grey pillows on top of it. there is a a decorative wall piece made of natural fibers. it is of a circular shape.",
+    "gps": "[    -0.5813    0.082038]",
+    "yaw": 30.000021325393565,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 182
+}

@@ -1,0 +1,20 @@
+{
+    "episode_id": "9",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 5.033926486968994,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 1,
+    "target_object": "blanket that is located on top of the black leather couch. the blanket is tan in color.",
+    "gps": "[    -3.1071      1.4572]",
+    "yaw": -60.00000849984128,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 110
+}

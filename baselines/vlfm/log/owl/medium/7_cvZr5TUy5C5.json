@@ -1,0 +1,20 @@
+{
+    "episode_id": "7",
+    "scene_id": "cvZr5TUy5C5",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 8.009278297424316,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "floor lamp located near the mirror in the bedroom. the bedroom has two red pillows",
+    "gps": "[     5.3391     0.78349]",
+    "yaw": -29.99999741973147,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 53
+}

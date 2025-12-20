@@ -1,0 +1,20 @@
+{
+    "episode_id": "12",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 6.117732524871826,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 1,
+    "target_object": "the sink cabinet, which is a double sink cabinet, located next to the kitchen counter and dishwasher.",
+    "gps": "[     2.5744      -1.759]",
+    "yaw": 60.000001669652114,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 389
+}

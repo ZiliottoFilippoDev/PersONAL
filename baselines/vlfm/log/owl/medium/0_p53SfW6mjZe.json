@@ -1,0 +1,20 @@
+{
+    "episode_id": "0",
+    "scene_id": "p53SfW6mjZe",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 3.5571038722991943,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.07013071608949359,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the ping pong table with the two red rackets on top of it.",
+    "gps": "[    -1.8571    -0.46651]",
+    "yaw": 29.999973514069374,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 351
+}

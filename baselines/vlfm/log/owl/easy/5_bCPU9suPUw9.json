@@ -1,0 +1,20 @@
+{
+    "episode_id": "5",
+    "scene_id": "bCPU9suPUw9",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 0.1741364300251007,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.45786885587895493,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the wooden table located near the dining chairs.",
+    "gps": "[   -0.96651     0.80801]",
+    "yaw": 179.99997768819966,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 25
+}

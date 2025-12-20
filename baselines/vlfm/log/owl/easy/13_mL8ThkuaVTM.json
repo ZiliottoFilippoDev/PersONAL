@@ -1,0 +1,20 @@
+{
+    "episode_id": "13",
+    "scene_id": "mL8ThkuaVTM",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 4.358054161071777,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 1,
+    "target_object": "The low bed of the two bunk beds. It has white and blue coloured sheets and is near the outdoor window.",
+    "gps": "[   -0.94777     -1.7703]",
+    "yaw": -30.00000424992064,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 43
+}

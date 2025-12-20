@@ -1,0 +1,20 @@
+{
+    "episode_id": "7",
+    "scene_id": "p53SfW6mjZe",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 10.937430381774902,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "The red table. It is located right next to the large grey couch.",
+    "gps": "[     3.2811      -2.433]",
+    "yaw": 90.00000250447816,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 37
+}

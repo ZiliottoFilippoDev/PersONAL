@@ -1,0 +1,20 @@
+{
+    "episode_id": "13",
+    "scene_id": "p53SfW6mjZe",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 1.529065489768982,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.11930585012573984,
+    "distance_to_goal_reward": -0.23184823989868164,
+    "traveled_stairs": 0,
+    "target_object": "The lower bunk bed on the left side of the frame.",
+    "gps": "[    -7.3475      1.0776]",
+    "yaw": -29.9999905895423,
+    "target_detected": true,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

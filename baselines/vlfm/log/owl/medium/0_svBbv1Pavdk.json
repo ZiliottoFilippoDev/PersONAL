@@ -1,0 +1,20 @@
+{
+    "episode_id": "0",
+    "scene_id": "svBbv1Pavdk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 1.9594690799713135,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.07391700534174879,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "it is a chair of the dining table near the kitchen island. it is of a grey color and in the middle of the table there is big plant.",
+    "gps": "[    -5.8596    -0.60895]",
+    "yaw": -89.99998884409983,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

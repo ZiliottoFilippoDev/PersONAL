@@ -1,0 +1,20 @@
+{
+    "episode_id": "20",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 4.563845634460449,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the drawer under the mirror and next to the black armchair. there are two photos on top of it.",
+    "gps": "[ 3.6397e-07       -1.25]",
+    "yaw": 89.99998201391065,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 21
+}

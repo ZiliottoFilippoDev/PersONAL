@@ -1,0 +1,20 @@
+{
+    "episode_id": "8",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 0.15243396162986755,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.03868654488638321,
+    "distance_to_goal_reward": -0.04807303845882416,
+    "traveled_stairs": 0,
+    "target_object": "black leather couch in the room. the couch is located near a lamp table. it is also close to an old tv.",
+    "gps": "[    -2.4253    -0.26083]",
+    "yaw": 5.579223702607801e-05,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

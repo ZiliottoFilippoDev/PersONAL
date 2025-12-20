@@ -1,0 +1,20 @@
+{
+    "episode_id": "12",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 11.781452178955078,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "a cardboard box, near a yellow bag on the corner of the room. It is next to the wardrobe with the toys on top. the box is for the toys.",
+    "gps": "[    -10.223     -4.9393]",
+    "yaw": 60.00000849984128,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 218
+}

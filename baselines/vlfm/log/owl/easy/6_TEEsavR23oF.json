@@ -1,0 +1,20 @@
+{
+    "episode_id": "6",
+    "scene_id": "TEEsavR23oF",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 6.425291538238525,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the wooden wardrobe under the tv and in front of the bed.",
+    "gps": "[     2.5683      2.8766]",
+    "yaw": -29.999959853691035,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 405
+}

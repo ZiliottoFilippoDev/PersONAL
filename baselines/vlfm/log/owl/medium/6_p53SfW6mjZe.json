@@ -1,0 +1,20 @@
+{
+    "episode_id": "6",
+    "scene_id": "p53SfW6mjZe",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 0.19468586146831512,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.7242696448762401,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the stairs and locate the wooden railing. this staircase is located near has a floreal picutre above a white desk",
+    "gps": "[         -1      2.4151]",
+    "yaw": -149.99999734394112,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 32
+}

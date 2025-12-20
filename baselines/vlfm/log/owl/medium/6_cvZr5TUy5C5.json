@@ -1,0 +1,20 @@
+{
+    "episode_id": "6",
+    "scene_id": "cvZr5TUy5C5",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 17.384645462036133,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "The table in between the two elegant armchairs and under the picture of Muarin ouina",
+    "gps": "[     11.932      1.9377]",
+    "yaw": 149.99997002318443,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 496
+}

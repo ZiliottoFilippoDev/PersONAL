@@ -1,0 +1,20 @@
+{
+    "episode_id": "4",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "did_not_fail",
+    "distance_to_goal": 0.06610830873250961,
+    "success": 1.0,
+    "spl": 0.781947951525713,
+    "soft_spl": 0.7644859546942533,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "plaid couch in the room. it is of a red-brown color.",
+    "gps": "[     -1.281     -1.6339]",
+    "yaw": -179.999991348578,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 40
+}

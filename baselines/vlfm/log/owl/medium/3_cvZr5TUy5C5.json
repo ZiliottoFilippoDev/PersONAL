@@ -1,0 +1,20 @@
+{
+    "episode_id": "3",
+    "scene_id": "cvZr5TUy5C5",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 12.364564895629883,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": 0.2467517852783203,
+    "traveled_stairs": 0,
+    "target_object": "sink cabinet located near the mirror and the toilet seat. the sink cabinet has two drawers and a mirror on the door.",
+    "gps": "[     4.7218     -3.7242]",
+    "yaw": -89.99996152334315,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

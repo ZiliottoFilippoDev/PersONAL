@@ -1,0 +1,20 @@
+{
+    "episode_id": "2",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 5.321042537689209,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.21545613359659543,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "it is one of the chairs of the dining table in the kitchen. it a chair made out of wood as the table. near the stainless steel refridgerator.",
+    "gps": "[    -1.3107      1.2487]",
+    "yaw": 150.00005198545446,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

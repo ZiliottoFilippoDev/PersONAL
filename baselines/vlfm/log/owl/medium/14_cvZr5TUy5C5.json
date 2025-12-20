@@ -1,0 +1,20 @@
+{
+    "episode_id": "14",
+    "scene_id": "cvZr5TUy5C5",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 4.796586990356445,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the elegant bathtub with marble pillars and a black and white chair near it.",
+    "gps": "[    -5.5563      6.1796]",
+    "yaw": -119.99998967892589,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 85
+}

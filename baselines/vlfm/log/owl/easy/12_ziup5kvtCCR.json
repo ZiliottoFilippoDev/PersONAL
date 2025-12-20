@@ -1,0 +1,20 @@
+{
+    "episode_id": "12",
+    "scene_id": "ziup5kvtCCR",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.9070773124694824,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the tv above the wooden brown drawers. the tv is next to the bed.",
+    "gps": "[    -3.7253     0.39952]",
+    "yaw": -179.999991348578,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 85
+}

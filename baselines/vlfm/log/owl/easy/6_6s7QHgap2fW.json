@@ -1,0 +1,20 @@
+{
+    "episode_id": "6",
+    "scene_id": "6s7QHgap2fW",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 3.381779909133911,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.00636058466860933,
+    "distance_to_goal_reward": 0.2459716796875,
+    "traveled_stairs": 0,
+    "target_object": "the sink near the kitchen cabinets. it is made out of stainless steel.",
+    "gps": "[    -7.7675     -2.8978]",
+    "yaw": -29.99998375935313,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 500
+}

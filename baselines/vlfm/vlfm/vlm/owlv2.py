@@ -51,7 +51,7 @@ class Owlv2_Detector_t:
         else:
             raise TypeError("texts must be a str or List[str]")
 
-        # print(f"Set text query.")
+        print(f"Set text query : {self.query_txt}.")
 
     @torch.inference_mode()
     def is_query_in_image(self, target_image: torch.Tensor, plot_result: bool=False):

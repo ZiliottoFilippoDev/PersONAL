@@ -1,0 +1,20 @@
+{
+    "episode_id": "21",
+    "scene_id": "qyAac8rV8Zk",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.444002866744995,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "tv in front of the bedroom with sheets that have square patterns of blue and green colors.",
+    "gps": "[     1.7546    -0.34168]",
+    "yaw": -30.00000424992064,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 114
+}

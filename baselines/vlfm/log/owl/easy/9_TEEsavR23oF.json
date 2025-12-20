@@ -1,0 +1,20 @@
+{
+    "episode_id": "9",
+    "scene_id": "TEEsavR23oF",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 2.072535514831543,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.0379242483071168,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "The blanke over the many coloured clothes.",
+    "gps": "[   -0.93807     0.27999]",
+    "yaw": -120.00000333930423,
+    "target_detected": false,
+    "stop_called": false,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 244
+}

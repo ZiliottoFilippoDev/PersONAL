@@ -1,0 +1,20 @@
+{
+    "episode_id": "15",
+    "scene_id": "4ok3usBNeis",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 4.472228050231934,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.2281239043557727,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "a lamp over a wooden desk, next to the black armchair",
+    "gps": "[    -4.0155       0.125]",
+    "yaw": 119.99998967892589,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 71
+}

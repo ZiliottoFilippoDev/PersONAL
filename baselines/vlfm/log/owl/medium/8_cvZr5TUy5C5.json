@@ -1,0 +1,20 @@
+{
+    "episode_id": "8",
+    "scene_id": "cvZr5TUy5C5",
+    "failure_cause": "Unkown",
+    "distance_to_goal": 7.474407196044922,
+    "success": 0.0,
+    "spl": 0.0,
+    "soft_spl": 0.07264204512893603,
+    "distance_to_goal_reward": -0.0,
+    "traveled_stairs": 0,
+    "target_object": "the elegant dark red sofa, on he opposite site of the king-sized bed",
+    "gps": "[   -0.27866      6.9833]",
+    "yaw": -90.00002299504568,
+    "target_detected": true,
+    "stop_called": true,
+    "render_below_images": [
+        "target_object"
+    ],
+    "num_steps": 217
+}
