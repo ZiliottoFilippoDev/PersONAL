@@ -71,11 +71,6 @@ ln -s \<PATH-TO-PersONAL\>/PersONAL/habitat-lab habitat-lab
 python3 PersONAL_eval_habitat.py \
 --config config/mon/PersONAL_eval_conf.yaml  \
 --PlanningConf.using_ov
-
-#Reading results
-python3 PersONAL_read_results.py \
---log_dir results/easy \
---PersONAL_data_type easy
 ```
 
 ## Citation

@@ -9,3 +9,6 @@ results*/
 yolov7
 weights
 datasetsdetectron2/
+PersONAL_eval_logs.py
+PersONAL_read_results.py
+results/hard/content/
