@@ -187,3 +187,6 @@ GroundingDINO/
 __pycache__/
 *.pyc
 log/owl
+eval_logs.py
+rough.ipynb
+read_results.py
