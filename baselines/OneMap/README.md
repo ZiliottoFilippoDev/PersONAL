@@ -51,8 +51,8 @@ python3 PersONAL_eval_habitat.py \
 --PlanningConf.using_ov
 ```
 
-## Citation
-If you use this code in your research, please cite our paper:
+## Source Citation
+
 ```
 @INPROCEEDINGS{11128393,
       author={Busch, Finn Lukas and Homberger, Timon and Ortega-Peimbert, Jesús and Yang, Quantao and Andersson, Olov},

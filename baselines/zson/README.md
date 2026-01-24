@@ -76,9 +76,8 @@ Download the models weights into `data/models/`:
   sbatch scripts/objnav-eval-personal.sh
   ```
 
-## Citation
+## Source Citation
 
-If you use this code in your research, please consider citing:
 ```
 @inproceedings{majumdar2022zson,
   title={ZSON: Zero-Shot Object-Goal Navigation using Multimodal Goal Embeddings},

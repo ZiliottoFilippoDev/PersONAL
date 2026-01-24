@@ -123,14 +123,7 @@ python -m vlfm.run PersONAL_args.log_dir=log/junk
 python -m read_results --log_dir log/junk/ --PersONAL_data_type easy
 ```
 
-
-## :newspaper: Source License
-
-VLFM is released under the [MIT License](LICENSE). This code was produced as part of Naoki Yokoyama's internship at the Boston Dynamics AI Institute in Summer 2023 and is provided "as is" without active maintenance. For questions, please contact [Naoki Yokoyama](http://naoki.io) or [Jiuguang Wang](https://www.robo.guru).
-
 ## :black_nib: Source Citation
-
-If you use VLFM in your research, please use the following BibTeX entry.
 
 ```
 @inproceedings{yokoyama2024vlfm,

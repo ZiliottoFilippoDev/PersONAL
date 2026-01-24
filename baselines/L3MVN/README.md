@@ -78,3 +78,20 @@ python main_llm_zeroshot_personal.py \
 --task_config tasks/objectnav_personal.yaml \
 --log_dir logs/easy
 ```
+
+
+## Source Citation
+
+```
+@inproceedings{Yu_2023,
+   title={L3MVN: Leveraging Large Language Models for Visual Target Navigation},
+   url={http://dx.doi.org/10.1109/IROS55552.2023.10342512},
+   DOI={10.1109/iros55552.2023.10342512},
+   booktitle={2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+   publisher={IEEE},
+   author={Yu, Bangguo and Kasaei, Hamidreza and Cao, Ming},
+   year={2023},
+   month=oct, pages={3554–3560} }
+
+
+```
