@@ -1,10 +1,8 @@
 # ZSON: Zero-Shot Object-Goal Navigation using Multimodal Goal Embeddings
 
-This is a PyTorch implementation of the NeurIPS-22 paper: https://arxiv.org/abs/2206.12403
-
-Arjun Majumdar*, Gunjan Aggarwal*, Bhavika Devnani, Judy Hoffman and Dhruv Batra
-
-Georgia Institute of Technology, Meta AI
+**Paper Reference:** [Link](https://arxiv.org/abs/2206.12403)
+**Author:** Arjun Majumdar*, Gunjan Aggarwal*, Bhavika Devnani, Judy Hoffman and Dhruv Batra
+**Source Repo:** [Link](https://github.com/gunagg/zson)
 
 ## Create habitat-lab directory
 

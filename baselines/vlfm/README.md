@@ -1,39 +1,8 @@
-<p align="center">
-  <img src="docs/teaser_v1.jpg" width="700">
-  <h1 align="center">VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation</h1>
-  <h3 align="center">
-    <a href="http://naoki.io/">Naoki Yokoyama</a>, <a href="https://faculty.cc.gatech.edu/~sha9/">Sehoon Ha</a>, <a href="https://faculty.cc.gatech.edu/~dbatra/">Dhruv Batra</a>, <a href="https://www.robo.guru/about.html">Jiuguang Wang</a>, <a href="https://bucherb.github.io">Bernadette Bucher</a>
-  </h3>
-  <p align="center">
-    <a href="http://naoki.io/portfolio/vlfm.html">Project Website</a> , <a href="https://arxiv.org/abs/2312.03275">Paper (arXiv)</a>
-  </p>
-  <p align="center">
-    <a href="https://github.com/bdaiinstitute/vlfm">
-      <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-    </a>
-    <a href="https://www.python.org/">
-      <img src="https://img.shields.io/badge/built%20with-Python3-red.svg" />
-    </a>
-    <a href="https://github.com/jiuguangw/Agenoria/actions">
-      <img src="https://github.com/bdaiinstitute/vlfm/actions/workflows/test.yml/badge.svg">
-    </a>
-    <a href="https://github.com/psf/black">
-      <img src="https://img.shields.io/badge/code%20style-black-000000.svg">
-    </a>
-    <a href="https://github.com/astral-sh/ruff">
-      <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json">
-    </a>
-    <a href="https://github.com/python/mypy">
-      <img src="http://www.mypy-lang.org/static/mypy_badge.svg">
-    </a>
-  </p>
-</p>
+# VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation
 
-## :sparkles: Overview
-
-Understanding how humans leverage semantic knowledge to navigate unfamiliar environments and decide where to explore next is pivotal for developing robots capable of human-like search behaviors. We introduce a zero-shot navigation approach, Vision-Language Frontier Maps (VLFM), which is inspired by human reasoning and designed to navigate towards unseen semantic objects in novel environments. VLFM builds occupancy maps from depth observations to identify frontiers, and leverages RGB observations and a pre-trained vision-language model to generate a language-grounded value map. VLFM then uses this map to identify the most promising frontier to explore for finding an instance of a given target object category. We evaluate VLFM in photo-realistic environments from the Gibson, Habitat-Matterport 3D (HM3D), and Matterport 3D (MP3D) datasets within the Habitat simulator. Remarkably, VLFM achieves state-of-the-art results on all three datasets as measured by success weighted by path length (SPL) for the Object Goal Navigation task. Furthermore, we show that VLFM's zero-shot nature enables it to be readily deployed on real-world robots such as the Boston Dynamics Spot mobile manipulation platform. We deploy VLFM on Spot and demonstrate its capability to efficiently navigate to target objects within an office building in the real world, without any prior knowledge of the environment. The accomplishments of VLFM underscore the promising potential of vision-language models in advancing the field of semantic navigation.
-
-Source Repo : [https://github.com/bdaiinstitute/vlfm](https://github.com/bdaiinstitute/vlfm)
+**Paper Reference:** [Link](https://arxiv.org/abs/2312.03275)
+**Author:** Naoki Yokoyama, Sehoon Ha, Dhruv Batra, Jiuguang Wang, Bernadette Bucher
+**Source Repo:** [Link](https://github.com/bdaiinstitute/vlfm)
 
 ## Setting up the directory
 

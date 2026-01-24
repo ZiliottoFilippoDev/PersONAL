@@ -66,3 +66,4 @@ baselines/vlfm/outputs/
 baselines/vlfm/tb/
 baselines/vlfm/lockfiles/
 baselines/vlfm/scripts/eval_dino.sh
+baselines/L3MVN/RedNet/model/rednet_semmap_mp3d_40.pth

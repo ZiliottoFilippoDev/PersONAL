@@ -1,34 +1,10 @@
-<p align="center">
-  <img src="docs/sys.png" width="900", style="border-radius:10%">
-  <h1 align="center">One Map to Find Them All: Real-time Open-Vocabulary Mapping for Zero-shot Multi-Object Navigation</h1>
-  <h3 align="center">
-    <a href="https://www.kth.se/profile/flbusch?l=en">Finn Lukas Busch</a>,
-    <a href="https://www.kth.se/profile/timonh">Timon Homberger</a>,
-    <a href="https://www.kth.se/profile/jgop">Jesús Ortega-Peimbert</a>,
-    <a href="https://www.kth.se/profile/quantao?l=en">Quantao Yang</a>,
-    <a href="https://www.kth.se/profile/olovand" style="white-space: nowrap;"> Olov Andersson</a>
-  </h3>
-  <p align="center">
-    <a href="https://www.finnbusch.com/OneMap/">Project Website</a> , <a href="https://arxiv.org/pdf/2409.11764">Paper (arXiv)</a>
-  </p>
-</p>
-<p align="center">
-  <a href="https://github.com/KTH-RPL/OneMap/actions/workflows/docker-build.yml">
-    <img src="https://github.com/KTH-RPL/OneMap/actions/workflows/docker-build.yml/badge.svg" alt="Docker Build">
-  </a>
-</p>
 
-This repository contains the code for the paper "One Map to Find Them All: Real-time Open-Vocabulary Mapping for
-Zero-shot Multi-Object Navigation". We provide a [dockerized environment](#setup-docker) to run the code or
-you can [run it locally](#setup-local-without-docker).
+# One Map to Find Them All: Real-time Open-Vocabulary Mapping for Zero-shot Multi-Object Navigation 
 
-In summary we open-source:
-- The OneMap mapping and navigation code
-- The evaluation code for single- and multi-object navigation
-- The multi-object navigation dataset and benchmark
-- The multi-object navigation dataset generation code, such that you can generate your own datasets
+**Paper Reference:** [Link](https://arxiv.org/abs/2409.11764)
+**Author:** Finn Lukas Busch, Timon Homberger, Jesús Ortega-Peimbert, Quantao Yang, Olov Andersson
+**Source Repo:** [Link](https://github.com/KTH-RPL/OneMap)
 
-Source Repo : [https://github.com/KTH-RPL/OneMap](https://github.com/KTH-RPL/OneMap)
 
 ## Setting up the Conda Env
 
