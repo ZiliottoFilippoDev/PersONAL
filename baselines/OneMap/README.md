@@ -2,7 +2,9 @@
 # One Map to Find Them All: Real-time Open-Vocabulary Mapping for Zero-shot Multi-Object Navigation 
 
 **Paper Reference:** [Link](https://arxiv.org/abs/2409.11764)
+
 **Author:** Finn Lukas Busch, Timon Homberger, Jesús Ortega-Peimbert, Quantao Yang, Olov Andersson
+
 **Source Repo:** [Link](https://github.com/KTH-RPL/OneMap)
 
 

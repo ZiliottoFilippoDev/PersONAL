@@ -1,7 +1,9 @@
 # VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation
 
 **Paper Reference:** [Link](https://arxiv.org/abs/2312.03275)
+
 **Author:** Naoki Yokoyama, Sehoon Ha, Dhruv Batra, Jiuguang Wang, Bernadette Bucher
+
 **Source Repo:** [Link](https://github.com/bdaiinstitute/vlfm)
 
 ## Setting up the directory
