@@ -1,7 +1,9 @@
 # L3MVN: Leveraging Large Language Models for Visual Target Navigation
 
 **Paper Reference:** [Link](https://arxiv.org/abs/2304.05501)
+
 **Author:** Bangguo Yu, Hamidreza Kasaei and Ming Cao
+
 **Source Repo:** [Link](https://github.com/ybgdgh/L3MVN)
 
 ## Create habitat-lab directory
