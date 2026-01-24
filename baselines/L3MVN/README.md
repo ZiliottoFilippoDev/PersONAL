@@ -55,6 +55,10 @@ ln -s habitat-lab/data/datasets/PersONAL/active data/objectgoal_PersONAL
 
 ```
 
+## Set up model weights
+
+Download the [segmentation model](https://drive.google.com/file/d/1U0dS44DIPZ22nTjw0RfO431zV-lMPcvv/view?usp=share_link) in `RedNet/model` path.
+
 ## Evaluation: 
 
 For the config file, refer to files under the path `L3MVN/envs/habitat/configs/tasks`.
