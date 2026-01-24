@@ -23,7 +23,8 @@ This repository will host the **code** and **dataset** for the paper:
 
 ## Setting up PersONAL Dataset
 
-To set up PersONAL as a dataset in Habitat, start by cloning the repositories.
+To set up PersONAL as a dataset in Habitat, start by cloning the repositories. Below, we install Habitat version 0.2.5 (used by baselines 
+such as VLFM and OneMap) into the directory `habitat-labs/v0.2.5`. For using Habitat's older versions, please follow the same procedure as below. For example, Habitat version challenge-2022 is used by the baselines ZSON and L3MVN, and can be installed into the directory `habitat-labs/challenge-2022`.
 
 ```bash
 #Clone PersONAL
@@ -31,7 +32,11 @@ git clone https://github.com/ZiliottoFilippoDev/PersONAL
 cd PersONAL
 
 #Clone Habitat-Lab
+mkdir -p ./habitat-labs/v0.2.5
+cd ./habitat-labs/v0.2.5
 git clone --branch v0.2.5 https://github.com/facebookresearch/habitat-lab
+cd ..
+cd ..
 ```
 
 #### Download HM3D data
@@ -67,10 +72,10 @@ Now that we have the scene data, we assign the PersONAL episodes from the habita
 
 ```bash
 #Create directory in habitat-lab
-mkdir -p habitat-lab/data/datasets/PersONAL/active/
+mkdir -p habitat-labs/v0.2.5/habitat-lab/data/datasets/PersONAL/active/
 
 #Create symlink
-ln -s data/split  habitat-lab/data/datasets/PersONAL/active/val
+ln -s data  habitat-labs/v0.2.5/habitat-lab/data/datasets/PersONAL/active/val
 ```
 
 #### Register PersONAL in Habitat
@@ -79,17 +84,17 @@ To make Habitat recognize PersONAL, we update relevant files within the Habitat 
 
 ```bash
 #Dataset info
-cp habitat-utils/personalized_object_nav_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/
+cp habitat-utils/personalized_object_nav_dataset.py habitat-labs/v0.2.5/habitat-lab/habitat-lab/habitat/datasets/object_nav/
 
 #Task info
-cp habitat-utils/personalized_object_nav_task.py habitat-lab/habitat-lab/habitat/tasks/nav/
+cp habitat-utils/personalized_object_nav_task.py habitat-labs/v0.2.5/habitat-lab/habitat-lab/habitat/tasks/nav/
 
 #Register PersONAL
-cp habitat-utils/register_personalized_dataset.py habitat-lab/habitat-lab/habitat/datasets/object_nav/__init__.py
-cp habitat-utils/registration.py habitat-lab/habitat-lab/habitat/datasets/registration.py
+cp habitat-utils/register_personalized_dataset.py habitat-labs/v0.2.5/habitat-lab/habitat-lab/habitat/datasets/object_nav/__init__.py
+cp habitat-utils/registration.py habitat-labs/v0.2.5/habitat-lab/habitat-lab/habitat/datasets/registration.py
 
 #Util : Obtain current habitat position and rotation
-cp habitat-utils/RL_Env.py habitat-lab/habitat-lab/habitat/core/env.py
+cp habitat-utils/RL_Env.py habitat-labs/v0.2.5/habitat-lab/habitat-lab/habitat/core/env.py
 ```
 
 #### Test Setup

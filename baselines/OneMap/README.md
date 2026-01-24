@@ -58,10 +58,10 @@ conda install habitat-sim=0.2.5 withbullet -c conda-forge -c aihabitat
 
 ```bash
 #Enter the OneMap directory
-cd baselines/OneMap
+cd PersONAL/baselines/OneMap
 
 #Symlink Habitat-Lab
-ln -s \<PATH-TO-PersONAL\>/PersONAL/habitat-lab habitat-lab
+ln -s \<PATH-TO-PersONAL\>/PersONAL/habitat-labs/v0.2.5/habitat-lab habitat-lab
 ```
 
 ## Evaluation

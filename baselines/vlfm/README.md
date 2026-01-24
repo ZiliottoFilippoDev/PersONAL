@@ -46,10 +46,10 @@ refer to the PersONAL_changes.txt file present in the vlfm directory.
 
 ```bash
 #Enter the VLFM directory
-cd vlfm
+cd PersONAL/baselines/vlfm
 
 #Symlink habitat-lab (present in parent dir)
-ln -s \<PATH-TO-PersONAL\>/PersONAL/habitat-lab habitat-lab
+ln -s \<PATH-TO-PersONAL\>/PersONAL/habitat-labs/v0.2.5/habitat-lab habitat-lab
 ```
 
 ### Clone required repositories (as instructed in the source)
