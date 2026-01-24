@@ -6,13 +6,13 @@ export MAGNUM_LOG=quiet
 CKPT_DIR="data/checkpoints/zson_conf_B.pth"
 
 # DATA_PATH="data/datasets/PersONAL/val/baselines/standard/easy/easy.json.gz"
-# LOG_DIR="logs/PersONAL_v2/easy"
+# LOG_DIR="logs/PersONAL/easy"
 
 # DATA_PATH="data/datasets/PersONAL/val/baselines/standard/medium/medium.json.gz"
-# LOG_DIR="logs/PersONAL_v2/medium"
+# LOG_DIR="logs/PersONAL/medium"
 
 DATA_PATH="data/datasets/PersONAL/val/baselines/standard/hard/hard.json.gz"
-LOG_DIR="logs/PersONAL_v2/hard"
+LOG_DIR="logs/PersONAL/hard"
 
 set -x
 

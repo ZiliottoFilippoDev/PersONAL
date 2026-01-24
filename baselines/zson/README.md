@@ -28,8 +28,6 @@ ln -s PersONAL/data data/datasets/PersONAL/val
 ```
 
 ## Installation
-All the required data can be downloaded from [here](https://huggingface.co/gunjan050/ZSON/tree/main).
-
 
 ```bash
 
@@ -58,6 +56,8 @@ python setup.py develop
 ```
 
 ## Download weights
+
+All the required data can be downloaded from [here](https://huggingface.co/gunjan050/ZSON/tree/main).
 
 The following trained checkpoints are to be downloaded into the directory `data/checkpoints`:
 

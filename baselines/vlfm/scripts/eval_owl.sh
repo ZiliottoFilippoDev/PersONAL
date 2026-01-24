@@ -8,11 +8,11 @@
 
 export PERSONAL_PYTHON='/mnt/anaconda3/envs/vlfm_query_blip/bin/python'
 
-easy_data_path="data/datasets/PersONAL/active_new/val/owl_baselines/easy/easy.json.gz"
-medium_data_path="data/datasets/PersONAL/active_new/val/owl_baselines/medium/medium.json.gz"
-hard_data_path="data/datasets/PersONAL/active_new/val/owl_baselines/hard/hard.json.gz"
+easy_data_path="data/datasets/PersONAL/active/val/baselines/owl/easy/easy.json.gz"
+medium_data_path="data/datasets/PersONAL/active/val/baselines/owl/medium/medium.json.gz"
+hard_data_path="data/datasets/PersONAL/active/val/baselines/owl/hard/hard.json.gz"
 
-session_name=eval_owl
+session_name=eval_vlfm_owl
 
 # Create a detached tmux session
 tmux new-session -d -s ${session_name}

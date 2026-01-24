@@ -65,3 +65,4 @@ baselines/vlfm/traced_model.pt
 baselines/vlfm/outputs/
 baselines/vlfm/tb/
 baselines/vlfm/lockfiles/
+baselines/vlfm/scripts/eval_dino.sh
