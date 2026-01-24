@@ -105,7 +105,7 @@ python -m test
 
 ## Testing Baselines
 
-To test baselines, please look up the `baselines` directory, which contains instructions on setting up the environments, running the evaluation and reading the results.
+To test baselines, please look up the `baselines` directory, which contains instructions on setting up the environments, and running the evaluation.
 
 
 ---
