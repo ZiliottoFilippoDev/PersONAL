@@ -23,6 +23,10 @@ This repository will host the **code** and **dataset** for the paper:
 
 ---
 
+## Evaluating Baselines
+
+For guidelines to set up the PersONAL dataset, and evaluate the baselines, please refer to the `baselines` branch. 
+
 ## 📑 Citation
 If you find this work useful, please cite:
 
